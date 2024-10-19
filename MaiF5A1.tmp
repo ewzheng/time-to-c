@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://ci53ft6i5bjtv"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
+[ext_resource type="Texture2D" uid="uid://blyx4wm52in7b" path="res://Assets/Sprites/play.png" id="2_067d1"]
+[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/quit.png" id="4_cjcar"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qvs5h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StartButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = ExtResource("2_067d1")
+
+[node name="QuitButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_cjcar")
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_texture_button_2_pressed"]
