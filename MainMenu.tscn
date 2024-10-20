@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://ci53ft6i5bjtv"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
-[ext_resource type="Texture2D" uid="uid://blyx4wm52in7b" path="res://Assets/Sprites/Others/play.png" id="2_6osnh"]
-[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/Others/quit.png" id="3_4wcga"]
+[ext_resource type="Texture2D" uid="uid://ct4enc0yliy2g" path="res://Assets/Sprites/Others/start_button.png" id="3_cfv1m"]
+[ext_resource type="Texture2D" uid="uid://balbtpf8l1ghv" path="res://Assets/Sprites/Others/quit_button.png" id="4_qt24y"]
 [ext_resource type="Texture2D" uid="uid://da0wkjv6e42go" path="res://Assets/Sprites/Others/title_screen.png" id="4_rnyo5"]
 
 [node name="Menu" type="Control"]
@@ -16,20 +16,19 @@ script = ExtResource("1_qvs5h")
 top_level = true
 z_index = 2
 layout_mode = 0
-offset_left = 280.0
-offset_top = 184.0
-offset_right = 408.0
-offset_bottom = 479.0
+offset_left = 288.0
+offset_top = 192.0
+offset_right = 416.0
+offset_bottom = 452.0
 scale = Vector2(1.10888, 1.10888)
 
-[node name="StartButton" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-action_mode = 0
-texture_normal = ExtResource("2_6osnh")
-
-[node name="QuitButton" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("3_4wcga")
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(16.0055, 12.0253)
+color = Color(0, 0, 0, 1)
 
 [node name="TitleScreen" type="Sprite2D" parent="."]
 show_behind_parent = true
@@ -37,14 +36,22 @@ z_index = 1
 position = Vector2(320, 240)
 texture = ExtResource("4_rnyo5")
 
-[node name="ColorRect" type="ColorRect" parent="TitleScreen"]
-show_behind_parent = true
-offset_left = -320.0
-offset_top = -240.0
-offset_right = -280.0
-offset_bottom = -200.0
-scale = Vector2(16.0055, 12.0253)
-color = Color(0, 0, 0, 1)
+[node name="StartButton" type="TextureButton" parent="TitleScreen"]
+offset_left = -64.0
+offset_top = -32.0
+offset_right = 64.0
+offset_bottom = 96.0
+scale = Vector2(1.36869, 1.36869)
+action_mode = 0
+texture_normal = ExtResource("3_cfv1m")
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[node name="QuitButton" type="TextureButton" parent="TitleScreen"]
+offset_left = -64.0
+offset_top = 40.0
+offset_right = 64.0
+offset_bottom = 168.0
+scale = Vector2(1.61766, 1.61766)
+texture_normal = ExtResource("4_qt24y")
+
+[connection signal="pressed" from="TitleScreen/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="TitleScreen/QuitButton" to="." method="_on_quit_button_pressed"]

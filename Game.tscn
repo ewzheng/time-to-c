@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="11_yeoj7"]
 
 [node name="ElementryScene" type="Node2D"]
+z_index = -1
 
 [node name="ElementaryBg" type="Sprite2D" parent="."]
 position = Vector2(320, 240)
@@ -81,8 +82,9 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 1
 
 [node name="PersistentUI" parent="." instance=ExtResource("11_v5mvl")]
-offset_left = 333.0
-offset_top = 39.0
-offset_right = 333.0
-offset_bottom = 39.0
-scale = Vector2(0.431137, 0.840969)
+z_index = 1
+offset_left = 331.0
+offset_top = 46.0
+offset_right = 331.0
+offset_bottom = 46.0
+scale = Vector2(0.435067, 0.724387)

@@ -7,7 +7,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_top = 1.0
 offset_right = 644.0
-offset_bottom = 808.0
+offset_bottom = 825.0
 scale = Vector2(0.935847, 0.582799)
 script = ExtResource("1_ah1cr")
 
@@ -40,20 +40,22 @@ layout_mode = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="problemMargin/problemContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="aRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
 
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 theme_override_colors/font_hover_pressed_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 70
 text = "A"
 flat = true
 
@@ -75,7 +77,6 @@ autowrap_mode = 3
 layout_mode = 2
 
 [node name="bRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -86,7 +87,7 @@ theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 70
 text = "B"
 flat = true
 
@@ -108,7 +109,6 @@ autowrap_mode = 3
 layout_mode = 2
 
 [node name="cRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -119,7 +119,7 @@ theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 70
 text = "C"
 flat = true
 
@@ -141,7 +141,6 @@ autowrap_mode = 3
 layout_mode = 2
 
 [node name="dRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -152,7 +151,7 @@ theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 70
 text = "D"
 flat = true
 
@@ -177,10 +176,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -126.822
-offset_top = -17.7054
-offset_right = 40.1784
-offset_bottom = 13.2946
+offset_left = -144.0
+offset_top = -34.0
+offset_right = 23.0
+offset_bottom = -3.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1, 0.995594)
