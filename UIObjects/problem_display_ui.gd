@@ -7,14 +7,15 @@ extends Control
 @onready var drow_answer = $problemMargin/problemContainer/VBoxContainer/dRow/answerText
 
 var scene_index = 0
+var json_as_dict = {}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var file = 'res://GameData/Elementary_Questions.json'
 	var json_as_text = FileAccess.get_file_as_string(file)
-	var json_as_dict = JSON.parse_string(json_as_text)
-	if json_as_dict:
-		print(json_as_dict)
+	json_as_dict = JSON.parse_string(json_as_text)
+	#if json_as_dict:
+	#	print(json_as_dict)
 	load_question_into_ui(json_as_dict, scene_index)    
 
 
@@ -29,9 +30,9 @@ func load_question_into_ui(json_as_dict, index):
 		crow_answer.text = current_question["C"]
 		drow_answer.text  = current_question["D"]
 		
-		
 	else:
 		print("Index out of bounds")
 
-func _on_submit_button_pressed() -> void:
+func _on_submit_button_2_pressed() -> void:
 	scene_index+=1
+	load_question_into_ui(json_as_dict, scene_index)

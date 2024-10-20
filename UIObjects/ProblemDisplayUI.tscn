@@ -7,22 +7,9 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 960.0
 offset_bottom = 1080.0
-grow_horizontal = 2
-grow_vertical = 2
+scale = Vector2(0.965527, 0.601282)
 size_flags_vertical = 3
 script = ExtResource("1_ah1cr")
-
-[node name="submitButton" type="Button" parent="."]
-z_index = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.9
-anchor_top = 0.9
-anchor_right = 0.97
-anchor_bottom = 0.95
-grow_horizontal = 0
-grow_vertical = 0
-text = "SUBMIT ANSWER"
 
 [node name="background" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(960, 1080)
@@ -160,4 +147,12 @@ text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
 
-[connection signal="pressed" from="submitButton" to="." method="_on_submit_button_pressed"]
+[node name="SubmitButton2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 578.958
+offset_top = 555.479
+offset_right = 745.958
+offset_bottom = 586.479
+text = "ASDFASDFASDFASDF"
+
+[connection signal="pressed" from="SubmitButton2" to="." method="_on_submit_button_2_pressed"]
