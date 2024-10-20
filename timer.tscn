@@ -1,22 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://blk1gdjkmrhck"]
+[gd_scene load_steps=2 format=3 uid="uid://cogaelap1e0xd"]
 
 [ext_resource type="Script" path="res://timer.gd" id="1_ody2u"]
-[ext_resource type="Texture2D" uid="uid://b3mmh1cankl3u" path="res://Assets/Sprites/clock.png" id="2_i0uwx"]
 
-[node name="Timer" type="Node2D"]
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_ody2u")
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
+wait_time = 120.0
 autostart = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_i0uwx")
-
-[node name="Label" type="Label" parent="TextureRect"]
-offset_right = 40.0
-offset_bottom = 23.0
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 188.0
+offset_top = 59.0
+offset_right = 228.0
+offset_bottom = 82.0
