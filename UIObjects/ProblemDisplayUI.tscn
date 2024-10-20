@@ -1,15 +1,16 @@
 [gd_scene load_steps=2 format=3 uid="uid://crplqufay3um0"]
 
-[ext_resource type="Script" path="res://UIObjects/ProblemDisplayUI.cs" id="1_016at"]
+[ext_resource type="Script" path="res://UIObjects/problem_display_ui.gd" id="1_ah1cr"]
 
 [node name="ProblemDisplayUI" type="Control"]
 layout_mode = 3
+anchors_preset = 0
 offset_right = 960.0
 offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
-script = ExtResource("1_016at")
+script = ExtResource("1_ah1cr")
 
 [node name="submitButton" type="Button" parent="."]
 z_index = 1
@@ -42,6 +43,9 @@ layout_mode = 2
 
 [node name="questionContainer" type="PanelContainer" parent="problemMargin/problemContainer"]
 custom_minimum_size = Vector2(0, 325)
+layout_mode = 2
+
+[node name="QuestionText" type="Label" parent="problemMargin/problemContainer/questionContainer"]
 layout_mode = 2
 
 [node name="HSeparator" type="HSeparator" parent="problemMargin/problemContainer"]
@@ -155,3 +159,5 @@ size_flags_horizontal = 3
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
+
+[connection signal="pressed" from="submitButton" to="." method="_on_submit_button_pressed"]

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ci53ft6i5bjtv"]
+[gd_scene load_steps=5 format=3 uid="uid://ci53ft6i5bjtv"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
 [ext_resource type="Texture2D" uid="uid://blyx4wm52in7b" path="res://Assets/Sprites/play.png" id="2_067d1"]
 [ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/quit.png" id="4_cjcar"]
+[ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="4_ssg26"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -28,6 +29,14 @@ texture_normal = ExtResource("4_cjcar")
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "test button"
+
+[node name="Timer" parent="." instance=ExtResource("4_ssg26")]
+layout_mode = 1
+offset_left = 204.0
+offset_top = 86.0
+offset_right = 204.0
+offset_bottom = 86.0
+scale = Vector2(1.91955, 1.97603)
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
