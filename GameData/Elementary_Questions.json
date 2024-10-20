@@ -1,0 +1,82 @@
+[
+	{
+		"Multiple Choice Questions": "What is the largest planet in our Solar System?",
+		"A": "Earth",
+		"B": "Uranus",
+		"C": "Jupiter",
+		"D": "Tatooine",
+		"Answer": "A"
+	},
+	{
+		"Multiple Choice Questions": "How many legs does a Spider have?",
+		"A": "3",
+		"B": "6",
+		"C": "8",
+		"D": "1",
+		"Answer": "C"
+	},
+	{
+		"Multiple Choice Questions": "What is 7 + 8?",
+		"A": "78",
+		"B": "15",
+		"C": "14",
+		"D": "5",
+		"Answer": "B"
+	},
+	{
+		"Multiple Choice Questions": "What is the Capital of the United States?",
+		"A": "Tucson",
+		"B": "Washington D.C",
+		"C": "Compton",
+		"D": "Tomato Town",
+		"Answer": "B"
+	},
+	{
+		"Multiple Choice Questions": "There once were 5 dogs in the park. There are now only 3 dogs left. How many dogs did the park lose?",
+		"A": "2",
+		"B": "5",
+		"C": "3",
+		"D": "1",
+		"Answer": "A"
+	},
+	{
+		"Multiple Choice Questions": "Which of these is a musical instrument?",
+		"A": "Car",
+		"B": "Banana",
+		"C": "Piano",
+		"D": "Tree",
+		"Answer": "C"
+	},
+	{
+		"Multiple Choice Questions": "Which of these words is a verb?",
+		"A": "Red",
+		"B": "Cut",
+		"C": "Happy",
+		"D": "Sarcophagus",
+		"Answer": "B"
+	},
+	{
+		"Multiple Choice Questions": "Which of these is a famous fairy tale?",
+		"A": "Little Red Riding Hood",
+		"B": "Dune",
+		"C": "The Bible",
+		"D": "Harry Potter",
+		"Answer": "A"
+	},
+	{
+		"Multiple Choice Questions": "What Shape for Four Equal Sides?",
+		"A": "Triangle",
+		"B": "Square",
+		"C": "Rectangle",
+		"D": "Star",
+		"Answer": "B"
+	},
+	{
+		"Multiple Choice Questions": "What Color Crayon tastes the best?",
+		"A": "Yellow",
+		"B": "Red",
+		"C": "Blue",
+		"D": "Green",
+		"Answer": "All"
+	}
+]

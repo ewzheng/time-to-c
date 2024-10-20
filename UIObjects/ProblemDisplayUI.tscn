@@ -1,0 +1,157 @@
+[gd_scene load_steps=2 format=3 uid="uid://crplqufay3um0"]
+
+[ext_resource type="Script" path="res://UIObjects/ProblemDisplayUI.cs" id="1_016at"]
+
+[node name="ProblemDisplayUI" type="Control"]
+layout_mode = 3
+offset_right = 960.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+script = ExtResource("1_016at")
+
+[node name="submitButton" type="Button" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.9
+anchor_top = 0.9
+anchor_right = 0.97
+anchor_bottom = 0.95
+grow_horizontal = 0
+grow_vertical = 0
+text = "SUBMIT ANSWER"
+
+[node name="background" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(960, 1080)
+layout_mode = 2
+offset_right = 960.0
+offset_bottom = 1080.0
+
+[node name="problemMargin" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 960.0
+offset_bottom = 960.0
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+
+[node name="problemContainer" type="VBoxContainer" parent="problemMargin"]
+layout_mode = 2
+
+[node name="questionContainer" type="PanelContainer" parent="problemMargin/problemContainer"]
+custom_minimum_size = Vector2(0, 325)
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="problemMargin/problemContainer"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="problemMargin/problemContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="aRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "A"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="answerText" type="Label" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "my balls hurt"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="spacer" type="Control" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="bRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "B"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="answerText" type="Label" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "my balls hurt"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="spacer2" type="Control" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="cRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "C"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="answerText" type="Label" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "my balls hurt"
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="spacer3" type="Control" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="dRow" type="HBoxContainer" parent="problemMargin/problemContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 70
+text = "D"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="answerText" type="Label" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "my balls hurt"
+vertical_alignment = 1
+autowrap_mode = 3

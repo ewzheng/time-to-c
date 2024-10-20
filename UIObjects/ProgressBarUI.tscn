@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkpl2ij3158ps"]
+
+[ext_resource type="Script" path="res://UIAssets/ProgressBarUI.cs" id="1_lvn3f"]
+
+[node name="ProgressBarUI" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1420.0
+offset_bottom = -1060.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_lvn3f")
+metadata/_edit_use_anchors_ = true
+
+[node name="background" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+color = Color(0.223103, 0.223103, 0.223103, 1)
+
+[node name="cutoffBar" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7
+anchor_right = 0.7
+offset_right = 2.0
+offset_bottom = 20.0
+color = Color(0.498782, 0.721456, 0.549707, 1)
+
+[node name="progressBar" type="ColorRect" parent="."]
+layout_mode = 0
+offset_bottom = 20.0
+color = Color(0.69655, 0.297756, 0.297203, 1)

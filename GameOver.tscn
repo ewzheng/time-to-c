@@ -23,6 +23,10 @@ texture_normal = ExtResource("2_ja703")
 layout_mode = 2
 texture_normal = ExtResource("1_crxt7")
 
+[node name="Test button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Test button"
+
 [node name="HourGlass" type="Sprite2D" parent="."]
 position = Vector2(135, 113)
 texture = ExtResource("5_e5b3y")
@@ -33,3 +37,4 @@ texture = ExtResource("4_roaq7")
 
 [connection signal="pressed" from="HBoxContainer/Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="HBoxContainer/Test button" to="." method="_on_test_button_pressed"]
