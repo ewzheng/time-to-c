@@ -1,3 +1,75 @@
-[gd_scene format=3 uid="uid://cw4wmpvxdws54"]
+[gd_scene load_steps=15 format=3 uid="uid://cw4wmpvxdws54"]
+
+[ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_1762i"]
+[ext_resource type="Texture2D" uid="uid://wkoe0vchmtc3" path="res://Assets/Sprites/scene 2/highschool_bg.png" id="2_b8m8y"]
+[ext_resource type="Texture2D" uid="uid://be5d5mmhrtvds" path="res://Assets/Sprites/scene 2/higschool_teacher.png" id="3_ylsli"]
+[ext_resource type="Texture2D" uid="uid://beck32rsex15r" path="res://Assets/Sprites/scene 2/teacher desk.png" id="4_inlb8"]
+[ext_resource type="Texture2D" uid="uid://ydheylwu10rk" path="res://Assets/Sprites/scene 2/student_desk_1.png" id="5_ab7fi"]
+[ext_resource type="Texture2D" uid="uid://bss586bnaikw5" path="res://Assets/Sprites/scene 2/student_desk_2.png" id="6_so8he"]
+[ext_resource type="Texture2D" uid="uid://mfsqc7h5auuj" path="res://Assets/Sprites/scene 2/student_ 1.png" id="7_vncbe"]
+[ext_resource type="Texture2D" uid="uid://dwd2pecjqckk3" path="res://Assets/Sprites/scene 2/student_ 2.png" id="8_2l7mm"]
+[ext_resource type="Texture2D" uid="uid://6qinuvcik6x1" path="res://Assets/Sprites/scene 2/student_desk_3.png" id="9_r62oc"]
+[ext_resource type="Texture2D" uid="uid://bmte5hgiiil6c" path="res://Assets/Sprites/scene 2/student_desk_4.png" id="10_p73de"]
+[ext_resource type="Texture2D" uid="uid://vhfexspfjr6c" path="res://Assets/Sprites/scene 2/student_ 3.png" id="11_tn5r6"]
+[ext_resource type="Texture2D" uid="uid://dlclv3u1guknx" path="res://Assets/Sprites/scene 2/student_ 4.png" id="12_degab"]
+[ext_resource type="Texture2D" uid="uid://c6fckfwnj6cv1" path="res://Assets/Sprites/scene 2/player_desk.png" id="13_0ffgm"]
+[ext_resource type="Texture2D" uid="uid://tcno0c0bcn4x" path="res://Assets/Sprites/scene 2/highschool_main.png" id="14_g2tq6"]
 
 [node name="Highschool" type="Node2D"]
+
+[node name="Frame" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(320, 240)
+texture = ExtResource("1_1762i")
+
+[node name="HighschoolBg" type="Sprite2D" parent="."]
+position = Vector2(320, 244)
+texture = ExtResource("2_b8m8y")
+
+[node name="HigschoolTeacher" type="Sprite2D" parent="."]
+position = Vector2(325, 239)
+texture = ExtResource("3_ylsli")
+
+[node name="TeacherDesk" type="Sprite2D" parent="."]
+position = Vector2(320, 247)
+texture = ExtResource("4_inlb8")
+
+[node name="StudentDesk1" type="Sprite2D" parent="."]
+position = Vector2(72, 323)
+texture = ExtResource("5_ab7fi")
+
+[node name="StudentDesk2" type="Sprite2D" parent="."]
+position = Vector2(238, 279)
+texture = ExtResource("6_so8he")
+
+[node name="Student1" type="Sprite2D" parent="."]
+position = Vector2(327, 244)
+texture = ExtResource("7_vncbe")
+
+[node name="Student2" type="Sprite2D" parent="."]
+position = Vector2(347, 249)
+texture = ExtResource("8_2l7mm")
+
+[node name="StudentDesk3" type="Sprite2D" parent="."]
+position = Vector2(108, 290)
+texture = ExtResource("9_r62oc")
+
+[node name="StudentDesk4" type="Sprite2D" parent="."]
+position = Vector2(252, 263)
+texture = ExtResource("10_p73de")
+
+[node name="Student3" type="Sprite2D" parent="."]
+position = Vector2(73, 349)
+texture = ExtResource("11_tn5r6")
+
+[node name="Student4" type="Sprite2D" parent="."]
+position = Vector2(294, 344)
+texture = ExtResource("12_degab")
+
+[node name="PlayerDesk" type="Sprite2D" parent="."]
+position = Vector2(319, 230)
+texture = ExtResource("13_0ffgm")
+
+[node name="HighschoolMain" type="Sprite2D" parent="."]
+position = Vector2(159, 396)
+texture = ExtResource("14_g2tq6")

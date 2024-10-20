@@ -5,9 +5,10 @@
 [node name="ProblemDisplayUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_top = 1.0
 offset_right = 644.0
-offset_bottom = 807.0
-scale = Vector2(0.965527, 0.601282)
+offset_bottom = 808.0
+scale = Vector2(0.935847, 0.582799)
 script = ExtResource("1_ah1cr")
 
 [node name="problemMargin" type="MarginContainer" parent="."]
@@ -26,11 +27,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 35
 text = "my balls hurt dadadaddadadadadadadadadadadadadadadada"
+horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="HSeparator" type="HSeparator" parent="problemMargin/problemContainer"]
+clip_contents = true
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
@@ -44,12 +48,17 @@ size_flags_vertical = 3
 
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
 layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "A"
 flat = true
 
 [node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
+visible = false
 custom_minimum_size = Vector2(5, 0)
 layout_mode = 2
 
@@ -57,7 +66,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -72,12 +81,17 @@ size_flags_vertical = 3
 
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
 layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "B"
 flat = true
 
 [node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
+visible = false
 custom_minimum_size = Vector2(5, 0)
 layout_mode = 2
 
@@ -85,7 +99,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -98,14 +112,19 @@ custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
+[node name="answerbutton2" type="Button" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
 layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "C"
 flat = true
 
 [node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
+visible = false
 custom_minimum_size = Vector2(5, 0)
 layout_mode = 2
 
@@ -113,7 +132,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -128,12 +147,17 @@ size_flags_vertical = 3
 
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
 layout_mode = 2
+theme_override_colors/font_hover_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_hover_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.964706, 0.215686, 0, 1)
+theme_override_colors/font_focus_color = Color(0.964706, 0.215686, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 text = "D"
 flat = true
 
 [node name="VSeparator" type="VSeparator" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
+visible = false
 custom_minimum_size = Vector2(5, 0)
 layout_mode = 2
 
@@ -141,7 +165,7 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 20
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -153,9 +177,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -167.0
-offset_top = -77.0
-offset_bottom = -46.0
+offset_left = -126.822
+offset_top = -17.7054
+offset_right = 40.1784
+offset_bottom = 13.2946
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1, 0.995594)
@@ -163,6 +188,6 @@ text = "SUBMIT"
 
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/aRow/answerButton" to="." method="_on_a_button_pressed"]
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/bRow/answerButton" to="." method="_on_b_button_pressed"]
-[connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/cRow/answerButton" to="." method="_on_c_button_pressed"]
+[connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/cRow/answerbutton2" to="." method="_on_answerbutton_2_pressed"]
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/dRow/answerButton" to="." method="_on_d_button_pressed"]
 [connection signal="pressed" from="submitButton" to="." method="_on_submit_button_pressed"]

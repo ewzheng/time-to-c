@@ -20,5 +20,8 @@ grow_horizontal = 0
 grow_vertical = 1
 
 [node name="ProblemDisplayUI" parent="." instance=ExtResource("2_w7501")]
+offset_top = 0.0
+offset_bottom = 807.0
+scale = Vector2(0.934636, 0.585786)
 
 [connection signal="rightAnswer" from="ProblemDisplayUI" to="." method="_on_correct_answer"]

@@ -1,0 +1,50 @@
+[gd_scene load_steps=10 format=3 uid="uid://cu1bk6xofeqp8"]
+
+[ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_6e0ci"]
+[ext_resource type="Texture2D" uid="uid://dntseghegj2d" path="res://Assets/Sprites/scene 3/college_bgNEW.png" id="2_akx6u"]
+[ext_resource type="Texture2D" uid="uid://beld60knoienk" path="res://Assets/Sprites/scene 3/teacher_desk.png" id="3_tiwb2"]
+[ext_resource type="Texture2D" uid="uid://cp13hbrftwy1i" path="res://Assets/Sprites/scene 3/colege_teacher.png" id="4_oxdxd"]
+[ext_resource type="Texture2D" uid="uid://b7yuw7j04k2d1" path="res://Assets/Sprites/scene 3/student_desk.png" id="5_pkorm"]
+[ext_resource type="Texture2D" uid="uid://c4jc2w1ewfk2o" path="res://Assets/Sprites/scene 3/collegestudent_1 (1).png" id="6_rwq2w"]
+[ext_resource type="Texture2D" uid="uid://bo12pi88w3wpy" path="res://Assets/Sprites/scene 3/collegestudent_3 (1).png" id="7_e6181"]
+[ext_resource type="Texture2D" uid="uid://bqlb6n0iuijam" path="res://Assets/Sprites/scene 3/collegestudent_3 (2).png" id="8_067cx"]
+[ext_resource type="Texture2D" uid="uid://bwgvpjjep84l2" path="res://Assets/Sprites/scene 3/player_desk.png" id="9_njoyk"]
+
+[node name="College" type="Node2D"]
+
+[node name="Frame" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(320, 240)
+texture = ExtResource("1_6e0ci")
+
+[node name="CollegeBgNew" type="Sprite2D" parent="."]
+position = Vector2(320, 243)
+texture = ExtResource("2_akx6u")
+
+[node name="TeacherDesk" type="Sprite2D" parent="."]
+position = Vector2(318, 251)
+texture = ExtResource("3_tiwb2")
+
+[node name="ColegeTeacher" type="Sprite2D" parent="."]
+position = Vector2(322, 251)
+texture = ExtResource("4_oxdxd")
+
+[node name="StudentDesk" type="Sprite2D" parent="."]
+position = Vector2(319, 251)
+texture = ExtResource("5_pkorm")
+
+[node name="Collegestudent1(1)" type="Sprite2D" parent="."]
+position = Vector2(104, 285)
+texture = ExtResource("6_rwq2w")
+
+[node name="Collegestudent3(1)" type="Sprite2D" parent="."]
+position = Vector2(187, 294)
+texture = ExtResource("7_e6181")
+
+[node name="Collegestudent3(2)" type="Sprite2D" parent="."]
+position = Vector2(429, 265)
+texture = ExtResource("8_067cx")
+
+[node name="PlayerDesk" type="Sprite2D" parent="."]
+position = Vector2(320, 237)
+texture = ExtResource("9_njoyk")

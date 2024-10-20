@@ -52,8 +52,12 @@ func _on_a_button_pressed() -> void:
 func _on_b_button_pressed() -> void:
 	currentAnswer = "B"
 
-func _on_c_button_pressed() -> void:
-	currentAnswer = "C"
+#func _on_c_button_pressed() -> void:
+	#currentAnswer = "C"
 	
 func _on_d_button_pressed() -> void:
 	currentAnswer = "D"
+
+
+func _on_answerbutton_2_pressed() -> void:
+	currentAnswer = "C"

@@ -123,7 +123,7 @@
 	"Multiple Choice Questions": "What is the speed of light in a vacuum?",
 	"A": "Dyson Vacuums are like 800 dollars. So 800 dollars per second",
 	"B": "3.0 × 10^8 meters per second",
-	"C": "E = mc^2 + Ai. This equation combines Einstein's famous equation E=m^2, which relates energy to mass and the speed of light, with the addition of (Artificial Intelligence).",
+	"C": "E = mc^2 + Ai. This equation combines Einstein's famous equation E=m^2 with the addition of (Artificial Intelligence).",
 	"D": "Sonic The Hedgehog Speed",
 	"Answer": "B"
   },
@@ -216,7 +216,7 @@
 	"Answer": "A"
   },
   {
-	"Multiple Choice Questions": "In the context of  Deep Learning and Transformers, what is the primary purpose of the \"attention mechanism\"?",
+	"Multiple Choice Questions": "In the context of  Deep Learning and Transformers, what is the primary purpose of the attention mechanism?",
 	"A": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ Honk Shoo Honk Mimimi",
 	"B": "To focus on specific parts of the input data, allowing the model to weigh the importance of different words or tokens",
 	"C": "To increase the size of the model to improve performance",
@@ -297,7 +297,7 @@
   },
   {
 	"Multiple Choice Questions": "Have you ever disagreed with a decision made by your supervisor? How did you handle it?",
-	"A": "I travel in worlds you can’t even imagine. You can’t conceive of what I’m capable of — I’m so far beyond you, I’m like a god in human clothing. Lightning bolts shoot from my fingertips!",
+	"A": "I travel in worlds you can’t even imagine. You can’t conceive of what I’m capable of. I’m like a god in human clothing. Lightning bolts shoot from my fingertips!",
 	"B": "Sorry can you repeat the question? You're breaking up over here with your Mickey Mouse microphone.",
 	"C": "All the time. I just cried when no one is looking.",
 	"D": "No, I always listen to my supervisors.",
