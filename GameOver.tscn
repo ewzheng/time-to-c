@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://d1mwfrdk5rbiv"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_2w11j"]
+[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/quit.png" id="1_crxt7"]
+[ext_resource type="Texture2D" uid="uid://diqq3bv5flujn" path="res://Assets/Sprites/Reset.png" id="2_ja703"]
+[ext_resource type="Texture2D" uid="uid://xqfk4lvah1lm" path="res://Assets/Sprites/GameOver.png" id="4_roaq7"]
+[ext_resource type="Texture2D" uid="uid://diuk2xuyahwhv" path="res://Assets/Sprites/HourGlass.png" id="5_e5b3y"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_2w11j")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 1.0
+offset_top = 93.0
+offset_right = 261.0
+offset_bottom = 333.0
+
+[node name="Reset" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_ja703")
+
+[node name="Quit" type="TextureButton" parent="HBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_crxt7")
+
+[node name="HourGlass" type="Sprite2D" parent="."]
+position = Vector2(135, 113)
+texture = ExtResource("5_e5b3y")
+
+[node name="GameOver" type="Sprite2D" parent="."]
+position = Vector2(135, 42)
+texture = ExtResource("4_roaq7")
+
+[connection signal="pressed" from="HBoxContainer/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]

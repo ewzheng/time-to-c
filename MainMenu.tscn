@@ -25,5 +25,10 @@ texture_normal = ExtResource("2_067d1")
 layout_mode = 2
 texture_normal = ExtResource("4_cjcar")
 
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "test button"
+
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
