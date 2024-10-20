@@ -14,3 +14,14 @@ config/name="OutOfTime"
 run/main_scene="res://MainMenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_width"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

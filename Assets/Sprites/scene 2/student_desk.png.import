@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqfk4lvah1lm"
-path="res://.godot/imported/GameOver.png-64a1136f30d2d7427cb69e5b50c44a50.ctex"
+uid="uid://brgnss2ha3yv8"
+path="res://.godot/imported/student_desk.png-ef3a7ef046a87ebbd30ad634205787b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/GameOver.png"
-dest_files=["res://.godot/imported/GameOver.png-64a1136f30d2d7427cb69e5b50c44a50.ctex"]
+source_file="res://Assets/Sprites/scene 2/student_desk.png"
+dest_files=["res://.godot/imported/student_desk.png-ef3a7ef046a87ebbd30ad634205787b2.ctex"]
 
 [params]
 

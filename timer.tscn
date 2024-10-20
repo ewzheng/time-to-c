@@ -13,13 +13,13 @@ script = ExtResource("1_ody2u")
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0
-wait_time = 15.0
+wait_time = 3.0
 one_shot = true
 autostart = true
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 188.0
-offset_top = 59.0
-offset_right = 228.0
-offset_bottom = 82.0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20

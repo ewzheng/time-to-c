@@ -34,6 +34,7 @@ layout_mode = 2
 
 [node name="QuestionText" type="Label" parent="problemMargin/problemContainer/questionContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 
 [node name="HSeparator" type="HSeparator" parent="problemMargin/problemContainer"]
 custom_minimum_size = Vector2(0, 20)
@@ -50,6 +51,7 @@ layout_mode = 2
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/aRow"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "A"
 flat = true
@@ -62,6 +64,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -77,6 +80,7 @@ layout_mode = 2
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/bRow"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "B"
 flat = true
@@ -89,6 +93,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -104,6 +109,7 @@ layout_mode = 2
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/cRow"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "C"
 flat = true
@@ -116,6 +122,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3
@@ -131,6 +138,7 @@ layout_mode = 2
 [node name="answerButton" type="Button" parent="problemMargin/problemContainer/VBoxContainer/dRow"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 text = "D"
 flat = true
@@ -143,6 +151,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "my balls hurt"
 vertical_alignment = 1
 autowrap_mode = 3

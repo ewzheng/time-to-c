@@ -1,40 +1,53 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1mwfrdk5rbiv"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_2w11j"]
-[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/quit.png" id="1_crxt7"]
-[ext_resource type="Texture2D" uid="uid://diqq3bv5flujn" path="res://Assets/Sprites/Reset.png" id="2_ja703"]
-[ext_resource type="Texture2D" uid="uid://xqfk4lvah1lm" path="res://Assets/Sprites/GameOver.png" id="4_roaq7"]
-[ext_resource type="Texture2D" uid="uid://diuk2xuyahwhv" path="res://Assets/Sprites/HourGlass.png" id="5_e5b3y"]
+[ext_resource type="Texture2D" uid="uid://diqq3bv5flujn" path="res://Assets/Sprites/Others/Reset.png" id="2_887x2"]
+[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/Others/quit.png" id="3_hqi6m"]
+[ext_resource type="Texture2D" uid="uid://diuk2xuyahwhv" path="res://Assets/Sprites/Others/HourGlass.png" id="4_joliu"]
+[ext_resource type="Texture2D" uid="uid://xqfk4lvah1lm" path="res://Assets/Sprites/Others/GameOver.png" id="5_1y3cn"]
 
-[node name="GameOver" type="Node2D"]
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_2w11j")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_left = 1.0
-offset_top = 93.0
-offset_right = 261.0
-offset_bottom = 333.0
+top_level = true
+offset_left = 36.0
+offset_top = 177.0
+offset_right = 296.0
+offset_bottom = 417.0
+scale = Vector2(2.16102, 2.16102)
 
 [node name="Reset" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("2_ja703")
+texture_normal = ExtResource("2_887x2")
 
 [node name="Quit" type="TextureButton" parent="HBoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("1_crxt7")
-
-[node name="Test button" type="Button" parent="HBoxContainer"]
-layout_mode = 2
-text = "Test button"
+texture_normal = ExtResource("3_hqi6m")
 
 [node name="HourGlass" type="Sprite2D" parent="."]
-position = Vector2(135, 113)
-texture = ExtResource("5_e5b3y")
+top_level = true
+position = Vector2(322, 305)
+scale = Vector2(2.54591, 2.54591)
+texture = ExtResource("4_joliu")
 
 [node name="GameOver" type="Sprite2D" parent="."]
-position = Vector2(135, 42)
-texture = ExtResource("4_roaq7")
+position = Vector2(325, 113)
+scale = Vector2(3.07558, 3.07558)
+texture = ExtResource("5_1y3cn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(16.0722, 12.0969)
+color = Color(0, 0, 0, 1)
 
 [connection signal="pressed" from="HBoxContainer/Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
-[connection signal="pressed" from="HBoxContainer/Test button" to="." method="_on_test_button_pressed"]

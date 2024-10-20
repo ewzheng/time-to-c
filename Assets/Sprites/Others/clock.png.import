@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diuk2xuyahwhv"
-path="res://.godot/imported/HourGlass.png-9e642e27ed37380efdd343f08bf13adb.ctex"
+uid="uid://b3mmh1cankl3u"
+path="res://.godot/imported/clock.png-ae1f55d50d1dc458dcb4ff975f20b147.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/HourGlass.png"
-dest_files=["res://.godot/imported/HourGlass.png-9e642e27ed37380efdd343f08bf13adb.ctex"]
+source_file="res://Assets/Sprites/Others/clock.png"
+dest_files=["res://.godot/imported/clock.png-ae1f55d50d1dc458dcb4ff975f20b147.ctex"]
 
 [params]
 

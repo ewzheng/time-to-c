@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cso22l2oo8c0m"
-path="res://.godot/imported/num.png-ce815b15771919d6badaebd02dcaef63.ctex"
+uid="uid://dwd2pecjqckk3"
+path="res://.godot/imported/student_ 2.png-0581ac3fa9e94bd077c5b3f460d8b27f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/num.png"
-dest_files=["res://.godot/imported/num.png-ce815b15771919d6badaebd02dcaef63.ctex"]
+source_file="res://Assets/Sprites/scene 2/student_ 2.png"
+dest_files=["res://.godot/imported/student_ 2.png-0581ac3fa9e94bd077c5b3f460d8b27f.ctex"]
 
 [params]
 

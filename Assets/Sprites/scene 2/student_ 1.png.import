@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da0wkjv6e42go"
-path="res://.godot/imported/title_screen.png-660b9073172f577dca05da7b9a968a2b.ctex"
+uid="uid://mfsqc7h5auuj"
+path="res://.godot/imported/student_ 1.png-ec60a141669996dd1eafd826941e4496.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/title_screen.png"
-dest_files=["res://.godot/imported/title_screen.png-660b9073172f577dca05da7b9a968a2b.ctex"]
+source_file="res://Assets/Sprites/scene 2/student_ 1.png"
+dest_files=["res://.godot/imported/student_ 1.png-ec60a141669996dd1eafd826941e4496.ctex"]
 
 [params]
 
