@@ -1,6 +1,6 @@
 extends Control
 
-@onready var questionContainer =  $problemMargin/problemContainer/questionContainer/QuestionText
+@onready var questionContainer =  $problemMargin/problemContainer/QuestionText
 @onready var arow_answer = $problemMargin/problemContainer/VBoxContainer/aRow/answerText
 @onready var brow_answer = $problemMargin/problemContainer/VBoxContainer/bRow/answerText
 @onready var crow_answer = $problemMargin/problemContainer/VBoxContainer/cRow/answerText
@@ -8,10 +8,13 @@ extends Control
 
 var scene_index = 0
 var json_as_dict = {}
+var currentAnswer = null
+
+signal rightAnswer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var file = 'res://GameData/Elementary_Questions.json'
+	var file = "res://GameData/combined_mc_questions.json"
 	var json_as_text = FileAccess.get_file_as_string(file)
 	json_as_dict = JSON.parse_string(json_as_text)
 	#if json_as_dict:
@@ -33,6 +36,24 @@ func load_question_into_ui(json_as_dict, index):
 	else:
 		print("Index out of bounds")
 
-func _on_submit_button_2_pressed() -> void:
-	scene_index+=1
-	load_question_into_ui(json_as_dict, scene_index)
+func _on_submit_button_pressed() -> void:
+	if currentAnswer != null:
+		if currentAnswer == json_as_dict[scene_index]["Answer"] || json_as_dict[scene_index]["Answer"] == "All":
+			rightAnswer.emit()
+			
+		currentAnswer = null
+		scene_index+=1
+		load_question_into_ui(json_as_dict, scene_index)
+	
+
+func _on_a_button_pressed() -> void:
+	currentAnswer = "A"
+	
+func _on_b_button_pressed() -> void:
+	currentAnswer = "B"
+
+func _on_c_button_pressed() -> void:
+	currentAnswer = "C"
+	
+func _on_d_button_pressed() -> void:
+	currentAnswer = "D"

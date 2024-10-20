@@ -1,0 +1,402 @@
+[
+  {
+	"Multiple Choice Questions": "What is the largest planet in our Solar System?",
+	"A": "Earth",
+	"B": "Uranus",
+	"C": "Jupiter",
+	"D": "Tatooine",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "How many legs does a Spider have?",
+	"A": "3",
+	"B": "6",
+	"C": "8",
+	"D": "1",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "What is 7 + 8?",
+	"A": "78",
+	"B": "15",
+	"C": "14",
+	"D": "5",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "What is the Capital of the United States?",
+	"A": "Tucson",
+	"B": "Washington D.C",
+	"C": "Compton",
+	"D": "Tomato Town",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "There once were 5 dogs in the park. There are now only 3 dogs left. How many dogs did the park lose?",
+	"A": "2",
+	"B": "5",
+	"C": "3",
+	"D": "1",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "Which of these is a musical instrument?",
+	"A": "Car",
+	"B": "Banana",
+	"C": "Piano",
+	"D": "Tree",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "Which of these words is a verb?",
+	"A": "Red",
+	"B": "Cut",
+	"C": "Happy",
+	"D": "Sarcophagus",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Which of these is a famous fairy tale?",
+	"A": "Little Red Riding Hood",
+	"B": "Dune",
+	"C": "The Bible",
+	"D": "Harry Potter",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "What Shape for Four Equal Sides?",
+	"A": "Triangle",
+	"B": "Square",
+	"C": "Rectangle",
+	"D": "Star",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "What Color Crayon tastes the best?",
+	"A": "Yellow",
+	"B": "Red",
+	"C": "Blue",
+	"D": "Green",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "What is the chemical formula for Water?",
+	"A": "H20",
+	"B": "HBOMax",
+	"C": "HO2",
+	"D": "WaTeR40",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "Which of these authors wrote Pride and Prejudice",
+	"A": "Emily Dickinson",
+	"B": "Jane Austen",
+	"C": "Nancy Pelosi",
+	"D": "Tifa from Final Fantasy",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "What is the equation of a line with slope 3 and y intercept 4?",
+	"A": "y = 3x + 4",
+	"B": "y = 4x + 3",
+	"C": "y = mc^2",
+	"D": "It's fun to stay at the YMCA",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "What is the derivative of sin(x) ?",
+	"A": "sin(69)",
+	"B": "tan(x)",
+	"C": "-sin(x)",
+	"D": "cos(x)",
+	"Answer": "D"
+  },
+  {
+	"Multiple Choice Questions": "What job pays you the most money?",
+	"A": "Engineer",
+	"B": "Teacher",
+	"C": "Underwater Cermanic Operator (Dishwasher)",
+	"D": "Doctor",
+	"Answer": "D"
+  },
+  {
+	"Multiple Choice Questions": "What is the speed of light in a vacuum?",
+	"A": "Dyson Vacuums are like 800 dollars. So 800 dollars per second",
+	"B": "3.0 × 10^8 meters per second",
+	"C": "E = mc^2 + Ai. This equation combines Einstein's famous equation E=m^2, which relates energy to mass and the speed of light, with the addition of (Artificial Intelligence).",
+	"D": "Sonic The Hedgehog Speed",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Which of the following best describes a mixed economy?",
+	"A": "Like a Peanut Butter and Jelly Sandwich but without the Sandwich",
+	"B": "There is no government involvement in the economy.",
+	"C": "Both private and government sectors play a role in the economy.",
+	"D": "Only private individuals control the economy.",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "Which of the following was NOT an ancient Mesopotamian civilization?",
+	"A": "Sumerians",
+	"B": "Egyptians",
+	"C": "The Jedi Order",
+	"D": "Babylonians",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Which of the following words is spelled correctly?",
+	"A": "Portatoe",
+	"B": "Irresistable",
+	"C": "Supersede",
+	"D": "Bagguette",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "Which Movie won an Oscar?",
+	"A": "The Godfather",
+	"B": "Dragon Ball Z",
+	"C": "Starship Troopers",
+	"D": "Morbius",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "What does the University care about most?",
+	"A": "Receiving money from sporting events",
+	"B": "The education, wellbeing, and success of their students",
+	"C": "Making College affordable for everyone",
+	"D": "Budgeting 240 million dollars without it disappearing",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Do you expect to get employed after College?",
+	"A": "Yes. I will apply myself to get a job",
+	"B": "Nah",
+	"C": "I'll think about it later",
+	"D": "I am ready to flip burgers",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "How many bits are in a byte?",
+	"A": "1",
+	"B": "2",
+	"C": "8",
+	"D": "4",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "In economics, which of the following best describes \"opportunity cost\"?",
+	"A": "The total cost of producing a good or service",
+	"B": "The value of the next best alternative foregone",
+	"C": "The cost of raw materials used in production",
+	"D": "The time I'm losing taking this dumb test",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Which treaty ended World War I?",
+	"A": "Treaty of Versailles",
+	"B": "Treaty of Paris",
+	"C": "The Gentleman's Agreement",
+	"D": "The Hash Out or Crash Out Treaty",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "How many beers can you down in one sitting?",
+	"A": "100",
+	"B": "2",
+	"C": "6",
+	"D": "I don't drink. I'm here on my grindset.",
+	"Answer": "D"
+  },
+  {
+	"Multiple Choice Questions": "What is a datastructure used commonly to represent graphics in programming?",
+	"A": "Quad Tree",
+	"B": "MS Paint",
+	"C": "Hiring a smarter overseas contractor to code for me instead",
+	"D": "Python Dictionaries",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "In the context of  Deep Learning and Transformers, what is the primary purpose of the \"attention mechanism\"?",
+	"A": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ Honk Shoo Honk Mimimi",
+	"B": "To focus on specific parts of the input data, allowing the model to weigh the importance of different words or tokens",
+	"C": "To increase the size of the model to improve performance",
+	"D": "To defeat the Decepticons",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Your roomate forgot to wash the dishes again after repeated warnings. How do you respond?",
+	"A": "Turn into the hulk and scream your loudest scream",
+	"B": "Yell its \"Morbin Time\", get in their face and initiate combat",
+	"C": "Sit down with them and have a civil conversation about respecting boundaries",
+	"D": "Assert passive agression in your comments towards them without direct confrontation",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "What is generally considered the best practice when preparing and filing your taxes?",
+	"A": "Waiting until the last day to file your taxes to ensure all income is accounted for",
+	"B": "Taxes are too confusing, stupid, and is basically theft if you think about it.",
+	"C": "Filing early and ensuring accuracy by using reliable tax software or consulting a tax professional",
+	"D": "Claiming every possible deduction, even if you're unsure if you're eligible",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "Where do you see yourself in 5 years?",
+	"A": "As a loyal employee of this company",
+	"B": "At another job that pays better",
+	"C": "With a healthy work-life balance and no overtime work",
+	"D": "The Richest Person on Earth",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "Why do you want to work here?",
+	"A": "I don't really. I need money",
+	"B": "I've always wanted to work in a dead-end white collar job",
+	"C": "I'm looking to apply the skills that I learned in college to change the world for the better.",
+	"D": "Looks like a comfy job where I don't do much",
+	"Answer": "C"
+  },
+  {
+	"Multiple Choice Questions": "What are your greatest strengths?",
+	"A": "I can bench 135lb",
+	"B": "I believe that everybody in the team should have a voice and be heard",
+	"C": "I have a flexible moral compass",
+	"D": "I will turn a blind eye if the company takes trash out back and burns it to reduce costs",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "What are your greatest weaknesses?",
+	"A": "I can bench 135lb",
+	"B": "I get too focused on the details sometimes and get tunnel vision. But I have made great efforts in fixing this by openly communicating to my team whenever I have a problem",
+	"C": "I have a flexible moral compass",
+	"D": "I love gambling",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "What do you enjoy about the company the most?",
+	"A": "I love that the company values a respectable work-life balance and steady promotion opportunties",
+	"B": "The company salad bar",
+	"C": "Working overtime to help reinforce my sigma grindset",
+	"D": "The money",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "Describe a challenging situation you faced at work and how you handled it?",
+	"A": "I asked for support, since we are a team that collectively try to solve problems together",
+	"B": "I was stressed. I defecated through a sunroof.",
+	"C": "I cried infront of my managers and let them handle it",
+	"D": "I didn't. Just kept reporting \"no progress\" during standup meetings",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "You just witnessed a fellow employee break a rule. How do you respond?",
+	"A": "A dog who bites every owner he’s ever had, can only be disciplined with a firm hand or put down… - Gus Fring",
+	"B": "Report them to upper management if you realize its a problem that cannot be handled in a civil manner",
+	"C": "Call the police",
+	"D": "Break the rules with them to let em know you about gang life.",
+	"Answer": "B"
+  },
+  {
+	"Multiple Choice Questions": "Have you ever disagreed with a decision made by your supervisor? How did you handle it?",
+	"A": "I travel in worlds you can’t even imagine. You can’t conceive of what I’m capable of — I’m so far beyond you, I’m like a god in human clothing. Lightning bolts shoot from my fingertips!",
+	"B": "Sorry can you repeat the question? You're breaking up over here with your Mickey Mouse microphone.",
+	"C": "All the time. I just cried when no one is looking.",
+	"D": "No, I always listen to my supervisors.",
+	"Answer": "D"
+  },
+  {
+	"Multiple Choice Questions": "How would you handle a difficult customer or client?",
+	"A": "Try to reach a compromise and listen to their complaints",
+	"B": "Tell them my way or the highway",
+	"C": "Ignore and move on",
+	"D": "I would uno reverse card them and start profuesly crying",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "What do you know about our company culture?",
+	"A": "The four day work week is such a great idea!",
+	"B": "I don't know, it was the first posting on LinkedIn",
+	"C": "I heard the urinals are very clean.",
+	"D": "I like that there are no deadlines, cause I hate doing work",
+	"Answer": "A"
+  },
+  {
+	"Multiple Choice Questions": "Why are you here?",
+	"A": "To suffer",
+	"B": "I don't know",
+	"C": "I don't care",
+	"D": "NONONONONONONONONONONONO",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "Do you have any regrets?",
+	"A": "Yes",
+	"B": "Yes",
+	"C": "Yes",
+	"D": "Yes",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "Are you Happy?",
+	"A": "YESYESYESYESYES",
+	"B": "I don't know",
+	"C": "CCCCCCCCCCCCCCC",
+	"D": "No more time left....",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "How much money are you leaving behind for your family?",
+	"A": "Everyone I know and love are already gone",
+	"B": "6 million dollars after tax",
+	"C": "I shall take all my wealth with me",
+	"D": "I don't know",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "What is your proudest accomplishment?",
+	"A": "Passing all my exams!",
+	"B": "Got a great job!",
+	"C": "Made lots of Money!",
+	"D": "Died Alone!",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "What was your life's purpose?",
+	"A": "Passing all my exams!",
+	"B": "Getting a great job!",
+	"C": "Making lots of Money!",
+	"D": "Dying Alone???? Wait???",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "Did you fulfill your lifes purpose?",
+	"A": "I made a severe and continous lapse in my judgement. And I do not expect to be forgiven.",
+	"B": "%$%&%^*^^$T#MICROSOFTEGDGEW",
+	"C": "O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA",
+	"D": "Life is this crazy, mystical thing, and sometimes you go out like a buster",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "Did you leave anything behind for people to remember you by?",
+	"A": "My 4.0 GPA",
+	"B": "My Nvidia Stocks",
+	"C": "My Malnourished Skeleton Ass Body",
+	"D": "I buried the One Piece behind the Dollar TreeParking Lot",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "Was it all worth it?",
+	"A": "Would you like to live in a world without Coke?",
+	"B": "Karthus Ult Incoming",
+	"C": "I will sleep well knowing all my haters with higher wilks are just weak body twinks",
+	"D": "42",
+	"Answer": "All"
+  },
+  {
+	"Multiple Choice Questions": "If you had a time machine would you go back?",
+	"A": "...",
+	"B": "No",
+	"C": "PLEASE I BEG!",
+	"D": "Honey is that you?",
+	"Answer": "All"
+  }
+]

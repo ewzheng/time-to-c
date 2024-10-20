@@ -17,6 +17,7 @@ script = ExtResource("1_2w11j")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 top_level = true
+layout_mode = 0
 offset_left = 36.0
 offset_top = 177.0
 offset_right = 296.0
@@ -44,6 +45,7 @@ texture = ExtResource("5_1y3cn")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 show_behind_parent = true
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(16.0722, 12.0969)

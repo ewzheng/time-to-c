@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://qm4ojipihbri" path="res://Assets/Sprites/scene 1/kid_2.png" id="6_foehj"]
 [ext_resource type="Texture2D" uid="uid://brjkb03pj0r0j" path="res://Assets/Sprites/scene 1/elementary _main.png" id="7_f371a"]
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="9_q1j5g"]
-[ext_resource type="PackedScene" uid="uid://crplqufay3um0" path="res://UIObjects/ProblemDisplayUI.tscn" id="10_pi21d"]
+[ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="11_v5mvl"]
 [ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="11_yeoj7"]
 
 [node name="ElementryScene" type="Node2D"]
@@ -65,18 +65,11 @@ position = Vector2(465, 240)
 scale = Vector2(0.373675, 0.900896)
 texture = ExtResource("9_q1j5g")
 
-[node name="ProblemDisplayUI" parent="." instance=ExtResource("10_pi21d")]
-offset_left = 323.0
-offset_top = 58.0
-offset_right = 1283.0
-offset_bottom = 1138.0
-scale = Vector2(0.314249, 0.38043)
-
 [node name="Control" parent="." instance=ExtResource("11_yeoj7")]
-offset_left = 357.0
-offset_top = 26.0
-offset_right = 357.0
-offset_bottom = 26.0
+offset_left = 446.0
+offset_top = 15.0
+offset_right = 446.0
+offset_bottom = 15.0
 
 [node name="Timer2" type="Timer" parent="Control"]
 
@@ -86,3 +79,10 @@ offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 1
+
+[node name="PersistentUI" parent="." instance=ExtResource("11_v5mvl")]
+offset_left = 333.0
+offset_top = 39.0
+offset_right = 333.0
+offset_bottom = 39.0
+scale = Vector2(0.431137, 0.840969)
