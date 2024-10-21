@@ -95,10 +95,10 @@ offset_right = 116.0
 offset_bottom = 186.0
 
 [node name="Dialogue7" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 276.0
-offset_top = 218.0
-offset_right = 276.0
-offset_bottom = 218.0
+offset_left = 245.0
+offset_top = 215.0
+offset_right = 245.0
+offset_bottom = 215.0
 
 [node name="Dialogue8" parent="." instance=ExtResource("6_2eheg")]
 offset_left = 144.0
