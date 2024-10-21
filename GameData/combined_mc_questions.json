@@ -136,12 +136,12 @@
 	"Answer": "C"
   },
   {
-	"Multiple Choice Questions": "Which of the following was NOT an ancient Mesopotamian civilization?",
+	"Multiple Choice Questions": "Which of the following was an ancient Mesopotamian civilization?",
 	"A": "Sumerians",
 	"B": "Egyptians",
 	"C": "The Jedi Order",
-	"D": "Babylonians",
-	"Answer": "B"
+	"D": "The French",
+	"Answer": "A"
   },
   {
 	"Multiple Choice Questions": "Which of the following words is spelled correctly?",
@@ -186,7 +186,7 @@
   {
 	"Multiple Choice Questions": "In economics, which of the following best describes \"opportunity cost\"?",
 	"A": "The total cost of producing a good or service",
-	"B": "The value of the next best alternative foregone",
+	"B": "Opportunity cost is the potential forgone profit from a missed opportunity",
 	"C": "The cost of raw materials used in production",
 	"D": "The time I'm losing taking this dumb test",
 	"Answer": "B"

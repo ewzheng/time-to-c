@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://bi6ccgqjv5kgo"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_6rcln"]
+[ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_8vx2s"]
+[ext_resource type="Texture2D" uid="uid://cud2dgoxuydfa" path="res://Assets/Sprites/end scene/credits.png" id="2_0qh2i"]
+[ext_resource type="Texture2D" uid="uid://ca8nect48utig" path="res://Assets/Sprites/end scene/evaclapping.jpg" id="3_mghdr"]
+[ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="5_g6icj"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_6rcln")
+
+[node name="Frame" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(320, 240)
+texture = ExtResource("1_8vx2s")
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(624, 246)
+scale = Vector2(1.00038, 1.00038)
+texture = ExtResource("2_0qh2i")
+
+[node name="Evaclapping" type="Sprite2D" parent="."]
+position = Vector2(171, 237)
+scale = Vector2(0.195077, 0.500489)
+texture = ExtResource("3_mghdr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(16.0588, 12.1092)
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 490.0
+offset_top = 205.0
+offset_right = 606.0
+offset_bottom = 262.0
+icon = ExtResource("5_g6icj")
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

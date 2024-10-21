@@ -43,7 +43,7 @@ func _on_submit_button_pressed() -> void:
 		
 		
 		if Global.scene_index == 9: # High School
-			if Global.progress < 0:
+			if Global.progress < 70:
 				Global.progress = 0
 				Global.scene_index = 0
 				get_tree().change_scene_to_file("res://GameOver.tscn")
@@ -53,7 +53,7 @@ func _on_submit_button_pressed() -> void:
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 19: # College
-			if Global.progress < 0:
+			if Global.progress < 70:
 				Global.progress = 0
 				Global.scene_index = 0
 				get_tree().change_scene_to_file("res://GameOver.tscn")
@@ -63,7 +63,7 @@ func _on_submit_button_pressed() -> void:
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 29: # Job Interview
-			if Global.progress < 0:
+			if Global.progress < 70:
 				Global.progress = 0
 				Global.scene_index = 0
 				get_tree().change_scene_to_file("res://GameOver.tscn")
@@ -73,17 +73,7 @@ func _on_submit_button_pressed() -> void:
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 39: # Death
-			if Global.progress < 0:
-				Global.progress = 0
-				Global.scene_index = 0
-				get_tree().change_scene_to_file("res://GameOver.tscn")
-				return
-			else:
-				get_tree().change_scene_to_file("res://highschool.tscn")
-				Global.progress = 0 # resets my global score / grade
-				
-		if Global.scene_index == 49: # Death
-			if Global.progress < 0:
+			if Global.progress < 70:
 				Global.progress = 0
 				Global.scene_index = 0
 				get_tree().change_scene_to_file("res://GameOver.tscn")
@@ -91,6 +81,12 @@ func _on_submit_button_pressed() -> void:
 			else:
 				get_tree().change_scene_to_file("res://jeover.tscn")
 				Global.progress = 0 # resets my global score / grade
+				
+		if Global.scene_index == 49: # Ending 
+			Global.progress = 0
+			Global.scene_index = 0
+			get_tree().change_scene_to_file("res://credits.tscn")
+			return
 	
 		
 		currentAnswer = null

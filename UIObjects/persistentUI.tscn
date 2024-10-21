@@ -20,7 +20,6 @@ grow_horizontal = 0
 grow_vertical = 1
 
 [node name="ProblemDisplayUI" parent="." instance=ExtResource("2_w7501")]
-clip_contents = true
 offset_top = 0.0
 offset_right = 684.0
 offset_bottom = 821.0

@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://bdkcb11nsneb"]
+[gd_scene load_steps=8 format=3 uid="uid://bdkcb11nsneb"]
 
 [ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_nsyt0"]
+[ext_resource type="Script" path="res://DialogueJeover.gd" id="1_rv328"]
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="2_2by0e"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="3_asit2"]
 [ext_resource type="Texture2D" uid="uid://jvpxh7m5vu7h" path="res://Assets/Sprites/scene 5/oldman.png" id="4_3778l"]
 [ext_resource type="Script" path="res://Timers/timer.gd" id="5_p3gba"]
+[ext_resource type="PackedScene" uid="uid://dnuo8rfp6kukq" path="res://GameObjects/Dialogue.tscn" id="6_2eheg"]
 
 [node name="Jeover" type="Node2D"]
+script = ExtResource("1_rv328")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 show_behind_parent = true
@@ -35,11 +38,6 @@ offset_right = 331.0
 offset_bottom = 46.0
 scale = Vector2(0.435067, 0.724387)
 
-[node name="Oldman" type="Sprite2D" parent="."]
-position = Vector2(169, 349)
-scale = Vector2(1.7366, 1.7366)
-texture = ExtResource("4_3778l")
-
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -58,3 +56,104 @@ offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
+
+[node name="Dialogue" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 118.0
+offset_top = 55.0
+offset_right = 118.0
+offset_bottom = 55.0
+
+[node name="Dialogue2" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 112.0
+offset_top = 297.0
+offset_right = 112.0
+offset_bottom = 297.0
+
+[node name="Dialogue3" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 271.0
+offset_top = 194.0
+offset_right = 271.0
+offset_bottom = 194.0
+
+[node name="Dialogue4" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 216.0
+offset_top = 117.0
+offset_right = 216.0
+offset_bottom = 117.0
+
+[node name="Dialogue5" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 251.0
+offset_top = 241.0
+offset_right = 251.0
+offset_bottom = 241.0
+
+[node name="Dialogue6" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 116.0
+offset_top = 186.0
+offset_right = 116.0
+offset_bottom = 186.0
+
+[node name="Dialogue7" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 276.0
+offset_top = 218.0
+offset_right = 276.0
+offset_bottom = 218.0
+
+[node name="Dialogue8" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 144.0
+offset_top = 219.0
+offset_right = 144.0
+offset_bottom = 219.0
+
+[node name="Dialogue9" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 206.0
+offset_top = 161.0
+offset_right = 206.0
+offset_bottom = 161.0
+
+[node name="Dialogue10" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 113.0
+offset_top = 138.0
+offset_right = 113.0
+offset_bottom = 138.0
+
+[node name="Dialogue12" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 142.0
+offset_top = 258.0
+offset_right = 142.0
+offset_bottom = 258.0
+
+[node name="Dialogue13" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 281.0
+offset_top = 279.0
+offset_right = 281.0
+offset_bottom = 279.0
+
+[node name="Dialogue14" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 265.0
+offset_top = 144.0
+offset_right = 265.0
+offset_bottom = 144.0
+
+[node name="Dialogue15" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 132.0
+offset_top = 92.0
+offset_right = 132.0
+offset_bottom = 92.0
+
+[node name="Dialogue16" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 201.0
+offset_top = 40.0
+offset_right = 201.0
+offset_bottom = 40.0
+
+[node name="Dialogue11" parent="." instance=ExtResource("6_2eheg")]
+offset_left = 256.0
+offset_top = 69.0
+offset_right = 256.0
+offset_bottom = 69.0
+
+[node name="Oldman" type="Sprite2D" parent="."]
+position = Vector2(169, 349)
+scale = Vector2(1.7366, 1.7366)
+texture = ExtResource("4_3778l")

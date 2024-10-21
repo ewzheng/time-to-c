@@ -1,6 +1,7 @@
-[gd_scene load_steps=18 format=3 uid="uid://cw4wmpvxdws54"]
+[gd_scene load_steps=20 format=3 uid="uid://cw4wmpvxdws54"]
 
 [ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_1762i"]
+[ext_resource type="Script" path="res://DialogueHS.gd" id="1_mh7qj"]
 [ext_resource type="Texture2D" uid="uid://wkoe0vchmtc3" path="res://Assets/Sprites/scene 2/highschool_bg.png" id="2_b8m8y"]
 [ext_resource type="Texture2D" uid="uid://be5d5mmhrtvds" path="res://Assets/Sprites/scene 2/higschool_teacher.png" id="3_ylsli"]
 [ext_resource type="Texture2D" uid="uid://beck32rsex15r" path="res://Assets/Sprites/scene 2/teacher desk.png" id="4_inlb8"]
@@ -17,8 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="15_b4shh"]
 [ext_resource type="Script" path="res://Timers/timer2.gd" id="17_6rmsw"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="17_e4vi7"]
+[ext_resource type="PackedScene" uid="uid://dnuo8rfp6kukq" path="res://GameObjects/Dialogue.tscn" id="18_3u8uo"]
 
 [node name="Highschool" type="Node2D"]
+script = ExtResource("1_mh7qj")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 show_behind_parent = true
@@ -120,3 +123,24 @@ offset_right = 40.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
+
+[node name="Dialogue" parent="." instance=ExtResource("18_3u8uo")]
+offset_left = 186.0
+offset_top = 159.0
+offset_right = 186.0
+offset_bottom = 159.0
+scale = Vector2(0.753703, 0.855748)
+
+[node name="Dialogue2" parent="." instance=ExtResource("18_3u8uo")]
+offset_left = 129.0
+offset_top = 222.0
+offset_right = 129.0
+offset_bottom = 222.0
+scale = Vector2(0.751892, 0.779601)
+
+[node name="Dialogue3" parent="." instance=ExtResource("18_3u8uo")]
+offset_left = 191.0
+offset_top = 291.0
+offset_right = 191.0
+offset_bottom = 291.0
+scale = Vector2(0.660419, 0.733489)

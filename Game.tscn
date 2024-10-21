@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://r8c4mmw5plno"]
+[gd_scene load_steps=14 format=3 uid="uid://r8c4mmw5plno"]
 
+[ext_resource type="Script" path="res://Elementary.gd" id="1_6bewo"]
 [ext_resource type="Texture2D" uid="uid://3ljjjdarwipd" path="res://Assets/Sprites/scene 1/desk_1.png" id="1_k5uo3"]
 [ext_resource type="Texture2D" uid="uid://eau4sg5hfhbw" path="res://Assets/Sprites/scene 1/elementary_bg.png" id="2_ht4w5"]
 [ext_resource type="Texture2D" uid="uid://csxhm14s48ddp" path="res://Assets/Sprites/scene 1/furniture_1.png" id="2_nn451"]
@@ -11,9 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="9_q1j5g"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="11_v5mvl"]
 [ext_resource type="PackedScene" uid="uid://dwnyujovec01u" path="res://timer.tscn" id="11_yeoj7"]
+[ext_resource type="PackedScene" uid="uid://dnuo8rfp6kukq" path="res://GameObjects/Dialogue.tscn" id="12_rjvs1"]
 
 [node name="ElementryScene" type="Node2D"]
 z_index = -1
+script = ExtResource("1_6bewo")
 
 [node name="ElementaryBg" type="Sprite2D" parent="."]
 position = Vector2(320, 240)
@@ -88,3 +91,19 @@ offset_top = 46.0
 offset_right = 331.0
 offset_bottom = 46.0
 scale = Vector2(0.435067, 0.724387)
+
+[node name="Dialogue" parent="." instance=ExtResource("12_rjvs1")]
+z_index = 5
+offset_left = 225.0
+offset_top = 221.0
+offset_right = 225.0
+offset_bottom = 221.0
+scale = Vector2(0.444404, 0.577059)
+
+[node name="Dialogue2" parent="." instance=ExtResource("12_rjvs1")]
+z_index = 5
+offset_left = 106.0
+offset_top = 227.0
+offset_right = 106.0
+offset_bottom = 227.0
+scale = Vector2(0.444404, 0.577059)
