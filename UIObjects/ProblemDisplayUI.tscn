@@ -196,12 +196,10 @@ stream = ExtResource("3_oeim2")
 volume_db = 15.0
 
 [node name="correct" type="AudioStreamPlayer2D" parent="."]
-scale = Vector2(1, 1)
 stream = ExtResource("4_5k0sg")
 volume_db = 10.0
 
 [node name="incorrect" type="AudioStreamPlayer2D" parent="."]
-scale = Vector2(1, 1)
 stream = ExtResource("5_8r1cs")
 volume_db = 3.0
 
