@@ -8,3 +8,4 @@ func _ready() -> void:
 
 func _on_correct_answer() -> void:
 	progressBar.addProgress()
+	progressBar.setProgress()

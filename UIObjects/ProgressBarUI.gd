@@ -25,3 +25,7 @@ func addProgress() -> void:
 		progressBar.set_color(Color(0.499, 0.721, 0.55))
 	
 	get_tree().create_tween().tween_property(progressBar, "size:x", (progress/100.0) * maxVal, 0.5)
+
+# Sets my global progress value because I am dogshit programmer - Kazu
+func setProgress() -> void:
+	Global.progress = progress

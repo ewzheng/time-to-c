@@ -6,7 +6,6 @@ extends Control
 @onready var crow_answer = $problemMargin/problemContainer/VBoxContainer/cRow/answerText
 @onready var drow_answer = $problemMargin/problemContainer/VBoxContainer/dRow/answerText
 
-var scene_index = 0
 var json_as_dict = {}
 var currentAnswer = null
 
@@ -19,7 +18,7 @@ func _ready() -> void:
 	json_as_dict = JSON.parse_string(json_as_text)
 	#if json_as_dict:
 	#	print(json_as_dict)
-	load_question_into_ui(json_as_dict, scene_index)    
+	load_question_into_ui(json_as_dict, Global.scene_index)    
 
 
 func load_question_into_ui(json_as_dict, index):
@@ -37,13 +36,26 @@ func load_question_into_ui(json_as_dict, index):
 		print("Index out of bounds")
 
 func _on_submit_button_pressed() -> void:
+
 	if currentAnswer != null:
-		if currentAnswer == json_as_dict[scene_index]["Answer"] || json_as_dict[scene_index]["Answer"] == "All":
+		if currentAnswer == json_as_dict[Global.scene_index]["Answer"] || json_as_dict[Global.scene_index]["Answer"] == "All":
 			rightAnswer.emit()
+		
+		if Global.scene_index == 9:
+			if Global.progress < 70:
+				Global.progress = 0
+				Global.scene_index = 0
+				get_tree().change_scene_to_file("res://GameOver.tscn")
+				
+				return
+			else:
+				get_tree().change_scene_to_file("res://highschool.tscn")
+				Global.progress = 0 # resets my global score / grade
 			
+	
 		currentAnswer = null
-		scene_index+=1
-		load_question_into_ui(json_as_dict, scene_index)
+		Global.scene_index+=1
+		load_question_into_ui(json_as_dict, Global.scene_index)
 	
 
 func _on_a_button_pressed() -> void:
@@ -52,12 +64,8 @@ func _on_a_button_pressed() -> void:
 func _on_b_button_pressed() -> void:
 	currentAnswer = "B"
 
-#func _on_c_button_pressed() -> void:
-	#currentAnswer = "C"
+func _on_answerbutton_2_pressed() -> void:
+	currentAnswer = "C"
 	
 func _on_d_button_pressed() -> void:
 	currentAnswer = "D"
-
-
-func _on_answerbutton_2_pressed() -> void:
-	currentAnswer = "C"
