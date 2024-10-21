@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://crplqufay3um0"]
+[gd_scene load_steps=3 format=3 uid="uid://crplqufay3um0"]
 
 [ext_resource type="Script" path="res://UIObjects/problem_display_ui.gd" id="1_ah1cr"]
+[ext_resource type="Texture2D" uid="uid://d4apcxriqp07" path="res://Assets/Sprites/Others/submit_button.png" id="2_pf2ab"]
 
 [node name="ProblemDisplayUI" type="Control"]
 layout_mode = 3
@@ -176,14 +177,15 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -144.0
-offset_top = -34.0
-offset_right = 23.0
-offset_bottom = -3.0
+offset_left = -184.523
+offset_top = -69.0227
+offset_right = -17.5231
+offset_bottom = -21.0227
 grow_horizontal = 0
 grow_vertical = 0
-scale = Vector2(1, 0.995594)
-text = "SUBMIT"
+scale = Vector2(1.33797, 1.33207)
+icon = ExtResource("2_pf2ab")
+flat = true
 
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/aRow/answerButton" to="." method="_on_a_button_pressed"]
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/bRow/answerButton" to="." method="_on_b_button_pressed"]

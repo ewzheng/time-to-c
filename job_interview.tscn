@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://do1oe500ntiro" path="res://Assets/Sprites/scene 4/ceo_boss.png" id="4_1pyx8"]
 [ext_resource type="Texture2D" uid="uid://bjk3sdnecpqjv" path="res://Assets/Sprites/scene 4/ceo_desk.png" id="5_gqto0"]
 [ext_resource type="Texture2D" uid="uid://cqpn4o1085fd7" path="res://Assets/Sprites/scene 4/salaryman_main.png" id="6_oh82a"]
-[ext_resource type="Script" path="res://timer4.gd" id="7_ma4kf"]
+[ext_resource type="Script" path="res://Timers/timer.gd" id="7_wntgl"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="8_vxung"]
 
 [node name="JobInterview" type="Node2D"]
@@ -55,7 +55,7 @@ offset_left = 438.0
 offset_top = 19.0
 offset_right = 478.0
 offset_bottom = 59.0
-script = ExtResource("7_ma4kf")
+script = ExtResource("7_wntgl")
 
 [node name="Timer" type="Timer" parent="Control"]
 wait_time = 180.0
@@ -64,10 +64,10 @@ autostart = true
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 0
-offset_left = 438.0
-offset_top = 15.0
-offset_right = 478.0
-offset_bottom = 43.0
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 37.0
+offset_bottom = 24.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 

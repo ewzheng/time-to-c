@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://bqlb6n0iuijam" path="res://Assets/Sprites/scene 3/collegestudent_3 (2).png" id="8_067cx"]
 [ext_resource type="Texture2D" uid="uid://bwgvpjjep84l2" path="res://Assets/Sprites/scene 3/player_desk.png" id="9_njoyk"]
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="10_uyeor"]
-[ext_resource type="Script" path="res://Timers/timer3.gd" id="12_j6fj3"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="12_jwh70"]
+[ext_resource type="Script" path="res://Timers/timer.gd" id="12_njkfh"]
 
 [node name="College" type="Node2D"]
 
@@ -82,7 +82,7 @@ offset_left = 443.0
 offset_top = 14.0
 offset_right = 483.0
 offset_bottom = 54.0
-script = ExtResource("12_j6fj3")
+script = ExtResource("12_njkfh")
 
 [node name="Timer" type="Timer" parent="Control"]
 wait_time = 300.0

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="2_2by0e"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="3_asit2"]
 [ext_resource type="Texture2D" uid="uid://jvpxh7m5vu7h" path="res://Assets/Sprites/scene 5/oldman.png" id="4_3778l"]
-[ext_resource type="Script" path="res://timer5.gd" id="5_63gd0"]
+[ext_resource type="Script" path="res://Timers/timer.gd" id="5_p3gba"]
 
 [node name="Jeover" type="Node2D"]
 
@@ -47,11 +47,14 @@ offset_left = 439.0
 offset_top = 16.0
 offset_right = 479.0
 offset_bottom = 56.0
-script = ExtResource("5_63gd0")
+script = ExtResource("5_p3gba")
 
 [node name="Timer" type="Timer" parent="Control"]
+wait_time = 60.0
 
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20

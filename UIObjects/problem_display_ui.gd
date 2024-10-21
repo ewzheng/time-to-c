@@ -41,7 +41,8 @@ func _on_submit_button_pressed() -> void:
 		if currentAnswer == json_as_dict[Global.scene_index]["Answer"] || json_as_dict[Global.scene_index]["Answer"] == "All":
 			rightAnswer.emit()
 		
-		if Global.scene_index == 9:
+		
+		if Global.scene_index == 9: # High School
 			if Global.progress < 0:
 				Global.progress = 0
 				Global.scene_index = 0
@@ -50,8 +51,48 @@ func _on_submit_button_pressed() -> void:
 			else:
 				get_tree().change_scene_to_file("res://highschool.tscn")
 				Global.progress = 0 # resets my global score / grade
-			
+				
+		if Global.scene_index == 19: # College
+			if Global.progress < 0:
+				Global.progress = 0
+				Global.scene_index = 0
+				get_tree().change_scene_to_file("res://GameOver.tscn")
+				return
+			else:
+				get_tree().change_scene_to_file("res://college.tscn")
+				Global.progress = 0 # resets my global score / grade
+				
+		if Global.scene_index == 29: # Job Interview
+			if Global.progress < 0:
+				Global.progress = 0
+				Global.scene_index = 0
+				get_tree().change_scene_to_file("res://GameOver.tscn")
+				return
+			else:
+				get_tree().change_scene_to_file("res://job_interview.tscn")
+				Global.progress = 0 # resets my global score / grade
+				
+		if Global.scene_index == 39: # Death
+			if Global.progress < 0:
+				Global.progress = 0
+				Global.scene_index = 0
+				get_tree().change_scene_to_file("res://GameOver.tscn")
+				return
+			else:
+				get_tree().change_scene_to_file("res://highschool.tscn")
+				Global.progress = 0 # resets my global score / grade
+				
+		if Global.scene_index == 49: # Death
+			if Global.progress < 0:
+				Global.progress = 0
+				Global.scene_index = 0
+				get_tree().change_scene_to_file("res://GameOver.tscn")
+				return
+			else:
+				get_tree().change_scene_to_file("res://jeover.tscn")
+				Global.progress = 0 # resets my global score / grade
 	
+		
 		currentAnswer = null
 		Global.scene_index+=1
 		load_question_into_ui(json_as_dict, Global.scene_index)
