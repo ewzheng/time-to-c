@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1mwfrdk5rbiv"]
+[gd_scene load_steps=7 format=3 uid="uid://d1mwfrdk5rbiv"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_2w11j"]
 [ext_resource type="Texture2D" uid="uid://c2ie0yv1sg8i7" path="res://Assets/Sprites/Others/reset_butonNEW.png" id="2_8fta1"]
 [ext_resource type="Texture2D" uid="uid://diuk2xuyahwhv" path="res://Assets/Sprites/Others/HourGlass.png" id="4_joliu"]
 [ext_resource type="Texture2D" uid="uid://xqfk4lvah1lm" path="res://Assets/Sprites/Others/GameOver.png" id="5_1y3cn"]
 [ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="5_3bx0j"]
+[ext_resource type="AudioStream" uid="uid://ci3peaij1gr5x" path="res://Assets/Audio/gameover_theme.mp3" id="6_ptdxx"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -53,6 +54,11 @@ offset_bottom = 322.0
 scale = Vector2(2.38079, 2.38079)
 icon = ExtResource("5_3bx0j")
 flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ptdxx")
+volume_db = 10.0
+autoplay = true
 
 [connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

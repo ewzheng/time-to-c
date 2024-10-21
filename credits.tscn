@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bi6ccgqjv5kgo"]
+[gd_scene load_steps=7 format=3 uid="uid://bi6ccgqjv5kgo"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_6rcln"]
 [ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_8vx2s"]
 [ext_resource type="Texture2D" uid="uid://cud2dgoxuydfa" path="res://Assets/Sprites/end scene/credits.png" id="2_0qh2i"]
 [ext_resource type="Texture2D" uid="uid://ca8nect48utig" path="res://Assets/Sprites/end scene/evaclapping.jpg" id="3_mghdr"]
 [ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="5_g6icj"]
+[ext_resource type="AudioStream" uid="uid://n7j02siigccj" path="res://Assets/Sprites/end scene/credits.mp3" id="6_lfu2g"]
 
 [node name="Credits" type="Node2D"]
 script = ExtResource("1_6rcln")
@@ -38,5 +39,10 @@ offset_top = 205.0
 offset_right = 606.0
 offset_bottom = 262.0
 icon = ExtResource("5_g6icj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_lfu2g")
+volume_db = 10.0
+autoplay = true
 
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

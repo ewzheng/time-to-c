@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ci53ft6i5bjtv"]
+[gd_scene load_steps=6 format=3 uid="uid://ci53ft6i5bjtv"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
 [ext_resource type="Texture2D" uid="uid://cqt6syl0s5l70" path="res://Assets/Sprites/Others/start_buttonNEW.png" id="3_oruhe"]
 [ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="4_qtb6d"]
 [ext_resource type="Texture2D" uid="uid://da0wkjv6e42go" path="res://Assets/Sprites/Others/title_screen.png" id="4_rnyo5"]
+[ext_resource type="AudioStream" uid="uid://624t6akj6xy1" path="res://Assets/Audio/main_screen_theme.mp3" id="5_qo2s4"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -44,6 +45,11 @@ offset_bottom = 376.0
 scale = Vector2(1.79966, 1.79966)
 icon = ExtResource("4_qtb6d")
 flat = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_qo2s4")
+volume_db = 20.0
+autoplay = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

@@ -6,6 +6,8 @@ extends Control
 @onready var crow_answer = $problemMargin/problemContainer/VBoxContainer/cRow/answerText
 @onready var drow_answer = $problemMargin/problemContainer/VBoxContainer/dRow/answerText
 
+@onready var page_flip_audio = $page_flip
+
 var json_as_dict = {}
 var currentAnswer = null
 
@@ -38,6 +40,7 @@ func load_question_into_ui(json_as_dict, index):
 func _on_submit_button_pressed() -> void:
 
 	if currentAnswer != null:
+		page_flip_audio.play()
 		if currentAnswer == json_as_dict[Global.scene_index]["Answer"] || json_as_dict[Global.scene_index]["Answer"] == "All":
 			rightAnswer.emit()
 		
