@@ -42,7 +42,7 @@ icon = ExtResource("5_g6icj")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_lfu2g")
-volume_db = 10.0
+volume_db = -10.0
 autoplay = true
 
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

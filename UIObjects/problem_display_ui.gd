@@ -10,6 +10,7 @@ extends Control
 @onready var correct_audio = $correct 
 @onready var incorrect_audio = $incorrect
 @onready var button_click_audio = $button_click
+@onready var lose_audio = $lose_sound_effect
 
 var json_as_dict = {}
 var currentAnswer = null
@@ -40,59 +41,62 @@ func load_question_into_ui(json_as_dict, index):
 	else:
 		print("Index out of bounds")
 
+func game_over() -> void:
+	Global.progress = 0
+	Global.scene_index = 0
+	get_tree().change_scene_to_file("res://GameOver.tscn")
+	return
+
+
 func _on_submit_button_pressed() -> void:
 
+	# Base loop to check answers and play correct sound effect
 	if currentAnswer != null:
 		page_flip_audio.play()
 		if currentAnswer == json_as_dict[Global.scene_index]["Answer"] || json_as_dict[Global.scene_index]["Answer"] == "All":
 			correct_audio.play()
 			rightAnswer.emit()
 		else:
+			#lose_audio.play()
 			incorrect_audio.play()
 		
 		if Global.scene_index == 9: # High School
 			if Global.progress < 70:
-				Global.progress = 0
-				Global.scene_index = 0
-				get_tree().change_scene_to_file("res://GameOver.tscn")
-				return
+				game_over()
 			else:
+				correct_audio.play()
 				get_tree().change_scene_to_file("res://highschool.tscn")
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 19: # College
 			if Global.progress < 70:
-				Global.progress = 0
-				Global.scene_index = 0
-				get_tree().change_scene_to_file("res://GameOver.tscn")
-				return
+				game_over()
 			else:
+				correct_audio.play()
 				get_tree().change_scene_to_file("res://college.tscn")
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 29: # Job Interview
 			if Global.progress < 70:
-				Global.progress = 0
-				Global.scene_index = 0
-				get_tree().change_scene_to_file("res://GameOver.tscn")
-				return
+				game_over()
 			else:
+				correct_audio.play()
 				get_tree().change_scene_to_file("res://job_interview.tscn")
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 39: # Death
 			if Global.progress < 70:
-				Global.progress = 0
-				Global.scene_index = 0
-				get_tree().change_scene_to_file("res://GameOver.tscn")
-				return
+				game_over()
 			else:
+				correct_audio.play()
 				get_tree().change_scene_to_file("res://jeover.tscn")
 				Global.progress = 0 # resets my global score / grade
 				
 		if Global.scene_index == 49: # Ending 
+			correct_audio.play()
 			Global.progress = 0
 			Global.scene_index = 0
+			correct_audio.play()
 			get_tree().change_scene_to_file("res://credits.tscn")
 			return
 	

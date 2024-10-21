@@ -27,6 +27,10 @@ window/size/mode=2
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_width"
 
+[dotnet]
+
+project/assembly_name="OutOfTime"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

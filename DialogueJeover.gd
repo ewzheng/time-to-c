@@ -18,4 +18,4 @@ func _ready() -> void:
 	get_node("Dialogue13").setLines(["Come to us", "Hurry", "Cthulhu awaits", "I can’t wait to eat your bones", "Shhhhhhh", "Failure", "Waste of air", "bald", "was it worth it?", "They gonna bury you out back", "Yummy"])
 	get_node("Dialogue14").setLines(["Come to us", "Hurry", "Cthulhu awaits", "I can’t wait to eat your bones", "Shhhhhhh", "Failure", "Waste of air", "bald", "was it worth it?", "They gonna bury you out back", "Yummy"])
 	get_node("Dialogue15").setLines(["Come to us", "Hurry", "Cthulhu awaits", "I can’t wait to eat your bones", "Shhhhhhh", "Failure", "Waste of air", "bald", "was it worth it?", "They gonna bury you out back", "Yummy"])
-	get_node("Dialogue16").setLines(["Sigma"])
+	get_node("Dialogue16").setLines(["Sigma", "💀"])
