@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://r8c4mmw5plno"]
+[gd_scene load_steps=13 format=3 uid="uid://r8c4mmw5plno"]
 
 [ext_resource type="Texture2D" uid="uid://3ljjjdarwipd" path="res://Assets/Sprites/scene 1/desk_1.png" id="1_k5uo3"]
 [ext_resource type="Texture2D" uid="uid://eau4sg5hfhbw" path="res://Assets/Sprites/scene 1/elementary_bg.png" id="2_ht4w5"]
@@ -9,8 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://qm4ojipihbri" path="res://Assets/Sprites/scene 1/kid_2.png" id="6_foehj"]
 [ext_resource type="Texture2D" uid="uid://brjkb03pj0r0j" path="res://Assets/Sprites/scene 1/elementary _main.png" id="7_f371a"]
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="9_q1j5g"]
+[ext_resource type="Script" path="res://Timers/timer.gd" id="11_sfyao"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="11_v5mvl"]
-[ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="11_yeoj7"]
+[ext_resource type="PackedScene" uid="uid://dwnyujovec01u" path="res://timer.tscn" id="11_yeoj7"]
 
 [node name="ElementryScene" type="Node2D"]
 z_index = -1
@@ -62,7 +63,7 @@ color = Color(0, 0, 0, 1)
 
 [node name="PaperBackground" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(465, 240)
+position = Vector2(465, 236)
 scale = Vector2(0.373675, 0.900896)
 texture = ExtResource("9_q1j5g")
 
@@ -71,6 +72,7 @@ offset_left = 446.0
 offset_top = 15.0
 offset_right = 446.0
 offset_bottom = 15.0
+script = ExtResource("11_sfyao")
 
 [node name="Timer2" type="Timer" parent="Control"]
 

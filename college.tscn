@@ -10,10 +10,19 @@
 [ext_resource type="Texture2D" uid="uid://bqlb6n0iuijam" path="res://Assets/Sprites/scene 3/collegestudent_3 (2).png" id="8_067cx"]
 [ext_resource type="Texture2D" uid="uid://bwgvpjjep84l2" path="res://Assets/Sprites/scene 3/player_desk.png" id="9_njoyk"]
 [ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="10_uyeor"]
-[ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="11_7dhob"]
+[ext_resource type="Script" path="res://Timers/timer3.gd" id="12_j6fj3"]
 [ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="12_jwh70"]
 
 [node name="College" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 41.0
+offset_bottom = 41.0
+scale = Vector2(16.0588, 12.1092)
+color = Color(0, 0, 0, 1)
 
 [node name="Frame" type="Sprite2D" parent="."]
 top_level = true
@@ -54,24 +63,9 @@ texture = ExtResource("9_njoyk")
 
 [node name="PaperBackground" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(465, 240)
+position = Vector2(465, 236)
 scale = Vector2(0.373675, 0.900896)
 texture = ExtResource("10_uyeor")
-
-[node name="Control" parent="." instance=ExtResource("11_7dhob")]
-offset_left = 446.0
-offset_top = 15.0
-offset_right = 446.0
-offset_bottom = 15.0
-
-[node name="Timer2" type="Timer" parent="Control"]
-
-[node name="Label2" type="Label" parent="Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 1
 
 [node name="PersistentUI" parent="." instance=ExtResource("12_jwh70")]
 z_index = 1
@@ -80,3 +74,24 @@ offset_top = 46.0
 offset_right = 331.0
 offset_bottom = 46.0
 scale = Vector2(0.435067, 0.724387)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 443.0
+offset_top = 14.0
+offset_right = 483.0
+offset_bottom = 54.0
+script = ExtResource("12_j6fj3")
+
+[node name="Timer" type="Timer" parent="Control"]
+wait_time = 300.0
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20

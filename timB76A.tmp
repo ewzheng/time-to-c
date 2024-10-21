@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dwnyujovec01u"]
+[gd_scene load_steps=2 format=3 uid="uid://cogaelap1e0xd"]
 
-[ext_resource type="Script" path="res://Timers/timer.gd" id="1_mxwy7"]
+[ext_resource type="Script" path="res://timer.gd" id="1_ody2u"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_mxwy7")
+script = ExtResource("1_ody2u")
 
 [node name="Timer" type="Timer" parent="."]
 process_callback = 0

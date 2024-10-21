@@ -42,11 +42,10 @@ func _on_submit_button_pressed() -> void:
 			rightAnswer.emit()
 		
 		if Global.scene_index == 9:
-			if Global.progress < 70:
+			if Global.progress < 0:
 				Global.progress = 0
 				Global.scene_index = 0
 				get_tree().change_scene_to_file("res://GameOver.tscn")
-				
 				return
 			else:
 				get_tree().change_scene_to_file("res://highschool.tscn")
