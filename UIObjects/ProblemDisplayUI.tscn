@@ -203,7 +203,7 @@ volume_db = 10.0
 [node name="incorrect" type="AudioStreamPlayer2D" parent="."]
 scale = Vector2(1, 1)
 stream = ExtResource("5_8r1cs")
-volume_db = 10.0
+volume_db = 3.0
 
 [node name="button_click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_j1q3x")

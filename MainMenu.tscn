@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ci53ft6i5bjtv"]
+[gd_scene load_steps=7 format=3 uid="uid://ci53ft6i5bjtv"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
 [ext_resource type="Texture2D" uid="uid://cqt6syl0s5l70" path="res://Assets/Sprites/Others/start_buttonNEW.png" id="3_oruhe"]
 [ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="4_qtb6d"]
 [ext_resource type="Texture2D" uid="uid://da0wkjv6e42go" path="res://Assets/Sprites/Others/title_screen.png" id="4_rnyo5"]
 [ext_resource type="AudioStream" uid="uid://624t6akj6xy1" path="res://Assets/Audio/main_screen_theme.mp3" id="5_qo2s4"]
+[ext_resource type="Texture2D" uid="uid://dlq2kf5ppf6f4" path="res://Assets/Sprites/FINALLY/help_button.png" id="6_2ttum"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -28,28 +29,38 @@ texture = ExtResource("4_rnyo5")
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 0
-offset_left = 224.0
+offset_left = 264.0
 offset_top = 224.0
-offset_right = 360.0
+offset_right = 400.0
 offset_bottom = 279.0
-scale = Vector2(1.64443, 1.64443)
+scale = Vector2(1.0488, 1.0488)
 icon = ExtResource("3_oruhe")
 flat = true
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 0
-offset_left = 232.0
-offset_top = 320.0
-offset_right = 368.0
-offset_bottom = 376.0
-scale = Vector2(1.79966, 1.79966)
+offset_left = 264.0
+offset_top = 360.0
+offset_right = 400.0
+offset_bottom = 417.0
+scale = Vector2(1.18692, 1.18692)
 icon = ExtResource("4_qtb6d")
 flat = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_qo2s4")
 volume_db = 20.0
-autoplay = true
+
+[node name="Help" type="Button" parent="."]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 288.0
+offset_right = 389.0
+offset_bottom = 346.0
+scale = Vector2(1.12361, 1.12361)
+icon = ExtResource("6_2ttum")
+flat = true
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Help" to="." method="_on_help_pressed"]
