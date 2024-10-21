@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cw4wmpvxdws54"]
+[gd_scene load_steps=18 format=3 uid="uid://cw4wmpvxdws54"]
 
 [ext_resource type="Texture2D" uid="uid://cfcj7kjei128" path="res://Assets/Sprites/scene 1/Frame.png" id="1_1762i"]
 [ext_resource type="Texture2D" uid="uid://wkoe0vchmtc3" path="res://Assets/Sprites/scene 2/highschool_bg.png" id="2_b8m8y"]
@@ -14,6 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://dlclv3u1guknx" path="res://Assets/Sprites/scene 2/student_ 4.png" id="12_degab"]
 [ext_resource type="Texture2D" uid="uid://c6fckfwnj6cv1" path="res://Assets/Sprites/scene 2/player_desk.png" id="13_0ffgm"]
 [ext_resource type="Texture2D" uid="uid://tcno0c0bcn4x" path="res://Assets/Sprites/scene 2/highschool_main.png" id="14_g2tq6"]
+[ext_resource type="Texture2D" uid="uid://bj5gdv1aec5os" path="res://UIAssets/paperBackground.png" id="15_b4shh"]
+[ext_resource type="PackedScene" uid="uid://cogaelap1e0xd" path="res://timer.tscn" id="16_a12mb"]
+[ext_resource type="PackedScene" uid="uid://cg8oxg6n4larn" path="res://UIObjects/persistentUI.tscn" id="17_e4vi7"]
 
 [node name="Highschool" type="Node2D"]
 
@@ -73,3 +76,32 @@ texture = ExtResource("13_0ffgm")
 [node name="HighschoolMain" type="Sprite2D" parent="."]
 position = Vector2(159, 396)
 texture = ExtResource("14_g2tq6")
+
+[node name="PaperBackground" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(465, 240)
+scale = Vector2(0.373675, 0.900896)
+texture = ExtResource("15_b4shh")
+
+[node name="Control" parent="." instance=ExtResource("16_a12mb")]
+offset_left = 446.0
+offset_top = 15.0
+offset_right = 446.0
+offset_bottom = 15.0
+
+[node name="Timer2" type="Timer" parent="Control"]
+
+[node name="Label2" type="Label" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 1
+
+[node name="PersistentUI" parent="." instance=ExtResource("17_e4vi7")]
+z_index = 1
+offset_left = 331.0
+offset_top = 46.0
+offset_right = 331.0
+offset_bottom = 46.0
+scale = Vector2(0.435067, 0.724387)
