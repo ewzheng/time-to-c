@@ -1,19 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729467477
-Game.tscn::PackedScene::1261508679597424908::1729467477::0::1::::<><>::uid://3ljjjdarwipd::::res://Assets/Sprites/scene 1/desk_1.png<>uid://eau4sg5hfhbw::::res://Assets/Sprites/scene 1/elementary_bg.png<>uid://csxhm14s48ddp::::res://Assets/Sprites/scene 1/furniture_1.png<>uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://d14og2slqsq5f::::res://Assets/Sprites/scene 1/elementary_teacher.png<>uid://c2vpifmrxbr1r::::res://Assets/Sprites/scene 1/kid_1.png<>uid://qm4ojipihbri::::res://Assets/Sprites/scene 1/kid_2.png<>uid://brjkb03pj0r0j::::res://Assets/Sprites/scene 1/elementary _main.png<>uid://bj5gdv1aec5os::::res://UIAssets/paperBackground.png<>uid://cg8oxg6n4larn::::res://UIObjects/persistentUI.tscn<>uid://cogaelap1e0xd::::res://timer.tscn
-GameOver.tscn::PackedScene::9010290119553728785::1729467477::0::1::::<><>::res://game_over.gd<>uid://diqq3bv5flujn::::res://Assets/Sprites/Others/Reset.png<>uid://dubopyxd7rhbp::::res://Assets/Sprites/Others/quit.png<>uid://diuk2xuyahwhv::::res://Assets/Sprites/Others/HourGlass.png<>uid://xqfk4lvah1lm::::res://Assets/Sprites/Others/GameOver.png
+::res://::1729470020
+college.tscn::PackedScene::6230372301081529295::1729470020::0::1::::<><>::uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://dntseghegj2d::::res://Assets/Sprites/scene 3/college_bgNEW.png<>uid://beld60knoienk::::res://Assets/Sprites/scene 3/teacher_desk.png<>uid://cp13hbrftwy1i::::res://Assets/Sprites/scene 3/colege_teacher.png<>uid://b7yuw7j04k2d1::::res://Assets/Sprites/scene 3/student_desk.png<>uid://c4jc2w1ewfk2o::::res://Assets/Sprites/scene 3/collegestudent_1 (1).png<>uid://bo12pi88w3wpy::::res://Assets/Sprites/scene 3/collegestudent_3 (1).png<>uid://bqlb6n0iuijam::::res://Assets/Sprites/scene 3/collegestudent_3 (2).png<>uid://bwgvpjjep84l2::::res://Assets/Sprites/scene 3/player_desk.png
+Game.tscn::PackedScene::1261508679597424908::1729470020::0::1::::<><>::uid://3ljjjdarwipd::::res://Assets/Sprites/scene 1/desk_1.png<>uid://eau4sg5hfhbw::::res://Assets/Sprites/scene 1/elementary_bg.png<>uid://csxhm14s48ddp::::res://Assets/Sprites/scene 1/furniture_1.png<>uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://d14og2slqsq5f::::res://Assets/Sprites/scene 1/elementary_teacher.png<>uid://c2vpifmrxbr1r::::res://Assets/Sprites/scene 1/kid_1.png<>uid://qm4ojipihbri::::res://Assets/Sprites/scene 1/kid_2.png<>uid://brjkb03pj0r0j::::res://Assets/Sprites/scene 1/elementary _main.png<>uid://bj5gdv1aec5os::::res://UIAssets/paperBackground.png<>uid://cg8oxg6n4larn::::res://UIObjects/persistentUI.tscn<>uid://cogaelap1e0xd::::res://timer.tscn
+GameOver.tscn::PackedScene::9010290119553728785::1729470020::0::1::::<><>::res://game_over.gd<>uid://c2ie0yv1sg8i7::::res://Assets/Sprites/Others/reset_butonNEW.png<>uid://dubopyxd7rhbp::::res://Assets/Sprites/Others/quit.png<>uid://diuk2xuyahwhv::::res://Assets/Sprites/Others/HourGlass.png<>uid://xqfk4lvah1lm::::res://Assets/Sprites/Others/GameOver.png
 game_over.gd::GDScript::-1::1729453369::0::1::::<>Control<>::
-highschool.tscn::PackedScene::6378220906999424225::1729467477::0::1::::<><>::uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://wkoe0vchmtc3::::res://Assets/Sprites/scene 2/highschool_bg.png<>uid://be5d5mmhrtvds::::res://Assets/Sprites/scene 2/higschool_teacher.png<>uid://beck32rsex15r::::res://Assets/Sprites/scene 2/teacher desk.png<>uid://ydheylwu10rk::::res://Assets/Sprites/scene 2/student_desk_1.png<>uid://bss586bnaikw5::::res://Assets/Sprites/scene 2/student_desk_2.png<>uid://mfsqc7h5auuj::::res://Assets/Sprites/scene 2/student_ 1.png<>uid://dwd2pecjqckk3::::res://Assets/Sprites/scene 2/student_ 2.png<>uid://6qinuvcik6x1::::res://Assets/Sprites/scene 2/student_desk_3.png<>uid://bmte5hgiiil6c::::res://Assets/Sprites/scene 2/student_desk_4.png<>uid://vhfexspfjr6c::::res://Assets/Sprites/scene 2/student_ 3.png<>uid://dlclv3u1guknx::::res://Assets/Sprites/scene 2/student_ 4.png<>uid://c6fckfwnj6cv1::::res://Assets/Sprites/scene 2/player_desk.png<>uid://tcno0c0bcn4x::::res://Assets/Sprites/scene 2/highschool_main.png
+highschool.tscn::PackedScene::6378220906999424225::1729470020::0::1::::<><>::uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://wkoe0vchmtc3::::res://Assets/Sprites/scene 2/highschool_bg.png<>uid://be5d5mmhrtvds::::res://Assets/Sprites/scene 2/higschool_teacher.png<>uid://beck32rsex15r::::res://Assets/Sprites/scene 2/teacher desk.png<>uid://ydheylwu10rk::::res://Assets/Sprites/scene 2/student_desk_1.png<>uid://bss586bnaikw5::::res://Assets/Sprites/scene 2/student_desk_2.png<>uid://mfsqc7h5auuj::::res://Assets/Sprites/scene 2/student_ 1.png<>uid://dwd2pecjqckk3::::res://Assets/Sprites/scene 2/student_ 2.png<>uid://6qinuvcik6x1::::res://Assets/Sprites/scene 2/student_desk_3.png<>uid://bmte5hgiiil6c::::res://Assets/Sprites/scene 2/student_desk_4.png<>uid://vhfexspfjr6c::::res://Assets/Sprites/scene 2/student_ 3.png<>uid://dlclv3u1guknx::::res://Assets/Sprites/scene 2/student_ 4.png<>uid://c6fckfwnj6cv1::::res://Assets/Sprites/scene 2/player_desk.png<>uid://tcno0c0bcn4x::::res://Assets/Sprites/scene 2/highschool_main.png
 icon.svg::CompressedTexture2D::1668260721952025937::1729365138::1729365156::1::::<><>::
-MainMenu.tscn::PackedScene::5397993500115453415::1729467477::0::1::::<><>::res://main_menu.gd<>uid://blyx4wm52in7b::::res://Assets/Sprites/Others/play.png<>uid://dubopyxd7rhbp::::res://Assets/Sprites/Others/quit.png<>uid://da0wkjv6e42go::::res://Assets/Sprites/Others/title_screen.png
-main_menu.gd::GDScript::-1::1729453182::0::1::::<>Control<>::
+job_interview.tscn::PackedScene::1532106336299224754::1729470020::0::1::::<><>::
+MainMenu.tscn::PackedScene::5397993500115453415::1729470020::0::1::::<><>::res://main_menu.gd<>uid://cqt6syl0s5l70::::res://Assets/Sprites/Others/start_buttonNEW.png<>uid://curqrtouhex4k::::res://Assets/Sprites/Others/quit_buttonNEW.png<>uid://da0wkjv6e42go::::res://Assets/Sprites/Others/title_screen.png
+main_menu.gd::GDScript::-1::1729469796::0::1::::<>Control<>::
 ProblemDisplay.gd::GDScript::-1::1729401233::0::1::::<>Control<>::
-college.tscn::PackedScene::6230372301081529295::1729467477::0::1::::<><>::uid://cfcj7kjei128::::res://Assets/Sprites/scene 1/Frame.png<>uid://dntseghegj2d::::res://Assets/Sprites/scene 3/college_bgNEW.png<>uid://beld60knoienk::::res://Assets/Sprites/scene 3/teacher_desk.png<>uid://cp13hbrftwy1i::::res://Assets/Sprites/scene 3/colege_teacher.png<>uid://b7yuw7j04k2d1::::res://Assets/Sprites/scene 3/student_desk.png<>uid://c4jc2w1ewfk2o::::res://Assets/Sprites/scene 3/collegestudent_1 (1).png<>uid://bo12pi88w3wpy::::res://Assets/Sprites/scene 3/collegestudent_3 (1).png<>uid://bqlb6n0iuijam::::res://Assets/Sprites/scene 3/collegestudent_3 (2).png<>uid://bwgvpjjep84l2::::res://Assets/Sprites/scene 3/player_desk.png
 timer.gd::GDScript::-1::1729452549::0::1::::<>Control<>::
-timer.tscn::PackedScene::5767879166491948309::1729467477::0::1::::<><>::res://timer.gd
+timer.tscn::PackedScene::5767879166491948309::1729470020::0::1::::<><>::res://timer.gd
 ::res://Assets/::1729365833
 ::res://Assets/Sprites/::1729455974
-::res://Assets/Sprites/Others/::1729467690
+::res://Assets/Sprites/Others/::1729470169
 clock.png::CompressedTexture2D::4377223311791748632::1729389564::1729446262::1::::<><>::
 GameOver.png::CompressedTexture2D::1647696431767034754::1729448104::1729448111::1::::<><>::
 HourGlass.png::CompressedTexture2D::7762716981651747219::1729386061::1729446262::1::::<><>::
@@ -21,10 +22,10 @@ load.png::CompressedTexture2D::3876574802037592957::1729366394::1729446262::1:::
 num.png::CompressedTexture2D::6066830036790424270::1729389546::1729446262::1::::<><>::
 play.png::CompressedTexture2D::3209492484116593061::1729366291::1729446262::1::::<><>::
 quit.png::CompressedTexture2D::8565981422671964917::1729366324::1729446262::1::::<><>::
-quit_button.png::CompressedTexture2D::2409224283154090107::1729464982::1729467696::1::::<><>::
+quit_buttonNEW.png::CompressedTexture2D::3230677541378616136::1729470169::1729470173::1::::<><>::
 Reset.png::CompressedTexture2D::7754824404696562231::1729385953::1729446262::1::::<><>::
-reset_buton.png::CompressedTexture2D::1025785605010827562::1729465006::1729467696::1::::<><>::
-start_button.png::CompressedTexture2D::6166562579440684076::1729464992::1729467696::1::::<><>::
+reset_butonNEW.png::CompressedTexture2D::6684743974671188484::1729469939::1729469943::1::::<><>::
+start_buttonNEW.png::CompressedTexture2D::5937001692702289141::1729469723::1729469726::1::::<><>::
 title_screen.png::CompressedTexture2D::7212225633276767502::1729380852::1729446262::1::::<><>::
 ::res://Assets/Sprites/scene 1/::1729449180
 desk_1.png::CompressedTexture2D::1988558779607763233::1729382684::1729389357::1::::<><>::
@@ -49,7 +50,7 @@ student_desk_2.png::CompressedTexture2D::3688860740092261586::1729455762::172945
 student_desk_3.png::CompressedTexture2D::2209394231116742516::1729455770::1729455982::1::::<><>::
 student_desk_4.png::CompressedTexture2D::3268206803771617932::1729455792::1729455982::1::::<><>::
 teacher desk.png::CompressedTexture2D::2671963431126598893::1729395524::1729449180::1::::<><>::
-::res://Assets/Sprites/scene 3/::1729460358
+::res://Assets/Sprites/scene 3/::1729469684
 colege_teacher.png::CompressedTexture2D::5881060498955523356::1729446984::1729455982::1::::<><>::
 collegestudent_1 (1).png::CompressedTexture2D::6827068078986612436::1729447338::1729455982::1::::<><>::
 collegestudent_3 (1).png::CompressedTexture2D::3424404934639618318::1729447360::1729455982::1::::<><>::
@@ -65,10 +66,10 @@ combined_mc_questions.json::JSON::-1::1729463438::0::1::::<><>::
 Game.tscn::PackedScene::2534565907915951998::1729382410::0::1::::<><>::
 ::res://UIAssets/::1729400153
 paperBackground.png::CompressedTexture2D::3080422411556226230::1729390666::1729396541::1::::<><>::
-::res://UIObjects/::1729467477
+::res://UIObjects/::1729470020
 PersistentUI.gd::GDScript::-1::1729459324::0::1::::<>Node<>::
-persistentUI.tscn::PackedScene::5262990369915797079::1729467477::0::1::::<><>::res://UIObjects/PersistentUI.gd<>uid://crplqufay3um0::::res://UIObjects/ProblemDisplayUI.tscn<>uid://c2ts5b16wdy1l::::res://UIObjects/ProgressBarUI.tscn
-ProblemDisplayUI.tscn::PackedScene::5997714893390779809::1729467477::0::1::::<><>::res://UIObjects/problem_display_ui.gd
+persistentUI.tscn::PackedScene::5262990369915797079::1729470020::0::1::::<><>::res://UIObjects/PersistentUI.gd<>uid://crplqufay3um0::::res://UIObjects/ProblemDisplayUI.tscn<>uid://c2ts5b16wdy1l::::res://UIObjects/ProgressBarUI.tscn
+ProblemDisplayUI.tscn::PackedScene::5997714893390779809::1729470020::0::1::::<><>::res://UIObjects/problem_display_ui.gd
 problem_display_ui.gd::GDScript::-1::1729465193::0::1::::<>Control<>::
 ProgressBarUI.gd::GDScript::-1::1729455894::0::1::::<>Node<>::
-ProgressBarUI.tscn::PackedScene::6708309896753464503::1729467477::0::1::::<><>::res://UIObjects/ProgressBarUI.gd
+ProgressBarUI.tscn::PackedScene::6708309896753464503::1729470020::0::1::::<><>::res://UIObjects/ProgressBarUI.gd

@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1mwfrdk5rbiv"]
 
 [ext_resource type="Script" path="res://game_over.gd" id="1_2w11j"]
-[ext_resource type="Texture2D" uid="uid://diqq3bv5flujn" path="res://Assets/Sprites/Others/Reset.png" id="2_887x2"]
-[ext_resource type="Texture2D" uid="uid://dubopyxd7rhbp" path="res://Assets/Sprites/Others/quit.png" id="3_hqi6m"]
+[ext_resource type="Texture2D" uid="uid://c2ie0yv1sg8i7" path="res://Assets/Sprites/Others/reset_butonNEW.png" id="2_8fta1"]
 [ext_resource type="Texture2D" uid="uid://diuk2xuyahwhv" path="res://Assets/Sprites/Others/HourGlass.png" id="4_joliu"]
 [ext_resource type="Texture2D" uid="uid://xqfk4lvah1lm" path="res://Assets/Sprites/Others/GameOver.png" id="5_1y3cn"]
+[ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="5_3bx0j"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -14,23 +14,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2w11j")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-top_level = true
-layout_mode = 0
-offset_left = 36.0
-offset_top = 177.0
-offset_right = 296.0
-offset_bottom = 417.0
-scale = Vector2(2.16102, 2.16102)
-
-[node name="Reset" type="TextureButton" parent="HBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("2_887x2")
-
-[node name="Quit" type="TextureButton" parent="HBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("3_hqi6m")
 
 [node name="HourGlass" type="Sprite2D" parent="."]
 top_level = true
@@ -51,5 +34,25 @@ offset_bottom = 40.0
 scale = Vector2(16.0722, 12.0969)
 color = Color(0, 0, 0, 1)
 
-[connection signal="pressed" from="HBoxContainer/Reset" to="." method="_on_reset_pressed"]
-[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[node name="Reset" type="Button" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 274.0
+offset_right = 140.0
+offset_bottom = 330.0
+scale = Vector2(2.08728, 2.08728)
+icon = ExtResource("2_8fta1")
+flat = true
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 265.0
+offset_right = 471.0
+offset_bottom = 322.0
+scale = Vector2(2.38079, 2.38079)
+icon = ExtResource("5_3bx0j")
+flat = true
+
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

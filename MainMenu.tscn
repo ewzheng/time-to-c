@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://ci53ft6i5bjtv"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_qvs5h"]
-[ext_resource type="Texture2D" uid="uid://ct4enc0yliy2g" path="res://Assets/Sprites/Others/start_button.png" id="3_cfv1m"]
-[ext_resource type="Texture2D" uid="uid://balbtpf8l1ghv" path="res://Assets/Sprites/Others/quit_button.png" id="4_qt24y"]
+[ext_resource type="Texture2D" uid="uid://cqt6syl0s5l70" path="res://Assets/Sprites/Others/start_buttonNEW.png" id="3_oruhe"]
+[ext_resource type="Texture2D" uid="uid://bma7105ehcka7" path="res://Assets/Sprites/Others/quit_buttonNEW.png" id="4_qtb6d"]
 [ext_resource type="Texture2D" uid="uid://da0wkjv6e42go" path="res://Assets/Sprites/Others/title_screen.png" id="4_rnyo5"]
 
 [node name="Menu" type="Control"]
@@ -11,16 +11,6 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_qvs5h")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-top_level = true
-z_index = 2
-layout_mode = 0
-offset_left = 288.0
-offset_top = 192.0
-offset_right = 416.0
-offset_bottom = 452.0
-scale = Vector2(1.10888, 1.10888)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 show_behind_parent = true
@@ -32,26 +22,28 @@ color = Color(0, 0, 0, 1)
 
 [node name="TitleScreen" type="Sprite2D" parent="."]
 show_behind_parent = true
-z_index = 1
-position = Vector2(320, 240)
+position = Vector2(312, 240)
 texture = ExtResource("4_rnyo5")
 
-[node name="StartButton" type="TextureButton" parent="TitleScreen"]
-offset_left = -64.0
-offset_top = -32.0
-offset_right = 64.0
-offset_bottom = 96.0
-scale = Vector2(1.36869, 1.36869)
-action_mode = 0
-texture_normal = ExtResource("3_cfv1m")
+[node name="Start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 224.0
+offset_right = 360.0
+offset_bottom = 279.0
+scale = Vector2(1.64443, 1.64443)
+icon = ExtResource("3_oruhe")
+flat = true
 
-[node name="QuitButton" type="TextureButton" parent="TitleScreen"]
-offset_left = -64.0
-offset_top = 40.0
-offset_right = 64.0
-offset_bottom = 168.0
-scale = Vector2(1.61766, 1.61766)
-texture_normal = ExtResource("4_qt24y")
+[node name="Quit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 320.0
+offset_right = 368.0
+offset_bottom = 376.0
+scale = Vector2(1.79966, 1.79966)
+icon = ExtResource("4_qtb6d")
+flat = true
 
-[connection signal="pressed" from="TitleScreen/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="TitleScreen/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
