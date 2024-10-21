@@ -7,6 +7,9 @@ extends Control
 @onready var drow_answer = $problemMargin/problemContainer/VBoxContainer/dRow/answerText
 
 @onready var page_flip_audio = $page_flip
+@onready var correct_audio = $correct 
+@onready var incorrect_audio = $incorrect
+@onready var button_click_audio = $button_click
 
 var json_as_dict = {}
 var currentAnswer = null
@@ -42,8 +45,10 @@ func _on_submit_button_pressed() -> void:
 	if currentAnswer != null:
 		page_flip_audio.play()
 		if currentAnswer == json_as_dict[Global.scene_index]["Answer"] || json_as_dict[Global.scene_index]["Answer"] == "All":
+			correct_audio.play()
 			rightAnswer.emit()
-		
+		else:
+			incorrect_audio.play()
 		
 		if Global.scene_index == 9: # High School
 			if Global.progress < 70:
@@ -98,13 +103,17 @@ func _on_submit_button_pressed() -> void:
 	
 
 func _on_a_button_pressed() -> void:
+	button_click_audio.play()
 	currentAnswer = "A"
 	
 func _on_b_button_pressed() -> void:
+	button_click_audio.play()
 	currentAnswer = "B"
 
 func _on_answerbutton_2_pressed() -> void:
+	button_click_audio.play()
 	currentAnswer = "C"
 	
 func _on_d_button_pressed() -> void:
+	button_click_audio.play()
 	currentAnswer = "D"

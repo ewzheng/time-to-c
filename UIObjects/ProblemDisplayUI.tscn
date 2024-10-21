@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://crplqufay3um0"]
+[gd_scene load_steps=7 format=3 uid="uid://crplqufay3um0"]
 
 [ext_resource type="Script" path="res://UIObjects/problem_display_ui.gd" id="1_ah1cr"]
 [ext_resource type="Texture2D" uid="uid://d4apcxriqp07" path="res://Assets/Sprites/Others/submit_button.png" id="2_pf2ab"]
 [ext_resource type="AudioStream" uid="uid://bm7faxhra7hw5" path="res://Assets/Audio/page-flip.mp3" id="3_oeim2"]
+[ext_resource type="AudioStream" uid="uid://c34ngife2pn84" path="res://Assets/Audio/correct.mp3" id="4_5k0sg"]
+[ext_resource type="AudioStream" uid="uid://c66b0no2qibgf" path="res://Assets/Audio/incorrect.mp3" id="5_8r1cs"]
+[ext_resource type="AudioStream" uid="uid://qd4w2kua3imn" path="res://Assets/Audio/button_click.wav" id="6_j1q3x"]
 
 [node name="ProblemDisplayUI" type="Control"]
 layout_mode = 3
@@ -191,6 +194,20 @@ flat = true
 [node name="page_flip" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_oeim2")
 volume_db = 15.0
+
+[node name="correct" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(1, 1)
+stream = ExtResource("4_5k0sg")
+volume_db = 10.0
+
+[node name="incorrect" type="AudioStreamPlayer2D" parent="."]
+scale = Vector2(1, 1)
+stream = ExtResource("5_8r1cs")
+volume_db = 10.0
+
+[node name="button_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_j1q3x")
+volume_db = 20.0
 
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/aRow/answerButton" to="." method="_on_a_button_pressed"]
 [connection signal="pressed" from="problemMargin/problemContainer/VBoxContainer/bRow/answerButton" to="." method="_on_b_button_pressed"]

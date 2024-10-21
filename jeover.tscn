@@ -125,33 +125,33 @@ offset_right = 142.0
 offset_bottom = 258.0
 
 [node name="Dialogue13" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 281.0
+offset_left = 263.0
 offset_top = 279.0
-offset_right = 281.0
+offset_right = 263.0
 offset_bottom = 279.0
 
 [node name="Dialogue14" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 265.0
+offset_left = 247.0
 offset_top = 144.0
-offset_right = 265.0
+offset_right = 247.0
 offset_bottom = 144.0
 
 [node name="Dialogue15" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 132.0
+offset_left = 114.0
 offset_top = 92.0
-offset_right = 132.0
+offset_right = 114.0
 offset_bottom = 92.0
 
 [node name="Dialogue16" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 201.0
+offset_left = 183.0
 offset_top = 40.0
-offset_right = 201.0
+offset_right = 183.0
 offset_bottom = 40.0
 
 [node name="Dialogue11" parent="." instance=ExtResource("6_2eheg")]
-offset_left = 256.0
+offset_left = 238.0
 offset_top = 69.0
-offset_right = 256.0
+offset_right = 238.0
 offset_bottom = 69.0
 
 [node name="Oldman" type="Sprite2D" parent="."]
@@ -161,5 +161,5 @@ texture = ExtResource("4_3778l")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_dcko0")
-volume_db = 10.0
+volume_db = 2.0
 autoplay = true
